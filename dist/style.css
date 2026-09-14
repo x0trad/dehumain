@@ -79,21 +79,21 @@ h1 {
 .mint-status { margin: 0.875rem 0 0; min-height: 1.5em; font-size: 0.875rem; line-height: 1.5; color: #e0ddd5; }
 
 .lineage {
-  padding: clamp(5rem, 10vw, 9rem) 1.5rem clamp(5rem, 10vw, 8rem);
+  padding: 3rem 1.5rem;
   background: #10110f;
   border-top: 1px solid rgba(242, 238, 229, 0.1);
 }
-.lineage-heading { text-align: center; margin-bottom: clamp(3rem, 6vw, 5rem); }
+.lineage-heading { text-align: center; margin-bottom: 1.75rem; }
 .lineage-heading h2 {
   font-family: "Apple Garamond", Garamond, Georgia, serif;
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(2.25rem, 4vw, 2.75rem);
   font-weight: 400;
   line-height: 1.05;
   letter-spacing: -0.025em;
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem;
 }
 .lineage-heading p { margin: 0; color: #aaa99f; font-size: 1rem; line-height: 1.6; }
-.family-tree { --tree-gap: clamp(2.5rem, 8vw, 7rem); width: min(100%, 42rem); margin: 0 auto; }
+.family-tree { --tree-gap: 3.5rem; width: min(100%, 22rem); margin: 0 auto; }
 .parents { display: grid; grid-template-columns: minmax(0, 1fr) var(--tree-gap) minmax(0, 1fr); align-items: start; }
 .family-member { margin: 0; min-width: 0; text-align: center; }
 .family-portrait { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: #1b1b18; border: 1px solid #363630; }
@@ -101,14 +101,14 @@ h1 {
 .family-portrait--man img { position: absolute; bottom: 0; left: 50%; width: 165%; height: 165%; max-width: none; transform: translateX(-50%); object-position: 50% 100%; }
 .family-portrait--unrevealed img { filter: blur(13px); transform: scale(1.12); opacity: 0.76; user-select: none; }
 .family-portrait--baby img { filter: blur(15px); object-position: center; }
-.family-member figcaption { padding-top: 1.25rem; }
-.member-name { display: block; font-family: "Apple Garamond", Garamond, Georgia, serif; font-size: clamp(1.625rem, 3vw, 2.25rem); line-height: 1.1; }
-.member-status { display: block; color: #a6a599; font-size: 0.875rem; line-height: 1.5; margin-top: 0.5rem; }
-.family-plus { align-self: center; transform: translateY(-2.25rem); text-align: center; font-family: "Apple Garamond", Garamond, Georgia, serif; font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 400; color: #b8b3a3; }
-.tree-branches { height: 2.5rem; width: calc(50% + var(--tree-gap) / 2); margin: 1.75rem auto 0; border: 1px solid #555449; border-top: 0; }
-.tree-stem { width: 1px; height: 2.75rem; margin: 0 auto; background: #555449; }
-.tree-stem--short { height: 2rem; }
-.cradle-label { width: fit-content; margin: 0 auto; border: 1px solid #555449; border-radius: 999px; padding: 0.75rem 1.5rem; color: #c3bdad; font-size: 0.875rem; line-height: 1.25; letter-spacing: 0.04em; }
+.family-member figcaption { padding-top: 0.75rem; }
+.member-name { display: block; font-family: "Apple Garamond", Garamond, Georgia, serif; font-size: 1.5rem; line-height: 1.1; }
+.member-status { display: block; color: #a6a599; font-size: 0.875rem; line-height: 1.5; margin-top: 0.25rem; }
+.family-plus { align-self: center; transform: translateY(-1.875rem); text-align: center; font-family: "Apple Garamond", Garamond, Georgia, serif; font-size: 2rem; font-weight: 400; color: #b8b3a3; }
+.tree-branches { height: 1rem; width: calc(50% + var(--tree-gap) / 2); margin: 1rem auto 0; border: 1px solid #555449; border-top: 0; }
+.tree-stem { width: 1px; height: 1.125rem; margin: 0 auto; background: #555449; }
+.tree-stem--short { height: 1rem; }
+.cradle-label { width: fit-content; margin: 0 auto; border: 1px solid #555449; border-radius: 999px; padding: 0.5rem 1rem; color: #c3bdad; font-size: 0.875rem; line-height: 1.25; letter-spacing: 0.04em; }
 .family-member--child { width: calc((100% - var(--tree-gap)) / 2); margin: 0 auto; }
 .footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem 2rem; margin: 0 clamp(1.5rem, 5vw, 5rem); padding: 2.5rem 0; border-top: 1px solid #363630; }
 .footer-wordmark { color: #f2eee5; text-decoration: none; font-family: "Apple Garamond", Garamond, Georgia, serif; font-size: 2.5rem; line-height: 1; letter-spacing: -0.035em; }
@@ -121,7 +121,7 @@ h1 {
   .mint-area { margin-top: 1.75rem; }
   .portrait { object-position: 49% 100%; }
   .lineage { padding-inline: 1.25rem; }
-  .family-member figcaption { padding-top: 1rem; }
+  .family-member figcaption { padding-top: 0.75rem; }
   .footer { flex-direction: column; align-items: center; text-align: center; padding: 2rem 0; gap: 1rem; }
 }
 
