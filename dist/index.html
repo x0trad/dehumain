@@ -9,19 +9,59 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2310110f'/%3E%3Ctext x='32' y='48' text-anchor='middle' font-family='Garamond,serif' font-size='55' fill='%23f2eee5'%3Ed%3C/text%3E%3C/svg%3E" />
     <link rel="preload" href="./assets/apple-garamond.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="preload" href="./assets/dehumain.jpg" as="image" fetchpriority="high" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="./style.css?v=2" />
+    <script src="./app.js?v=2" defer></script>
   </head>
   <body>
-    <main class="landing" aria-label="Dehumain NFT collection">
+    <main aria-label="Dehumain NFT collection">
+    <section class="landing" aria-labelledby="dehumain-title" id="top">
       <img class="portrait" src="./assets/dehumain.jpg" alt="A human portrait emerging from a dark background." fetchpriority="high" />
       <div class="identity">
-        <h1>dehumain</h1>
+        <h1 id="dehumain-title">dehumain</h1>
         <div class="mint-area">
           <button class="mint" type="button" aria-describedby="mint-status">Mint</button>
           <p class="mint-status" id="mint-status" role="status" aria-live="polite"></p>
         </div>
       </div>
+    </section>
+    <section class="lineage" aria-labelledby="lineage-title">
+      <header class="lineage-heading">
+        <h2 id="lineage-title">The lineage</h2>
+        <p>Two origins. A new generation.</p>
+      </header>
+      <div class="family-tree" role="group" aria-label="Family tree: the man and the woman are the parents of the baby below.">
+        <div class="parents">
+          <figure class="family-member">
+            <div class="family-portrait family-portrait--man">
+              <img src="./assets/dehumain.jpg" alt="The man, the first Dehumain origin." loading="lazy" />
+            </div>
+            <figcaption><span class="member-name">The man</span><span class="member-status">Collection 01</span></figcaption>
+          </figure>
+          <span class="family-plus" aria-hidden="true">+</span>
+          <figure class="family-member">
+            <div class="family-portrait family-portrait--unrevealed">
+              <img src="./assets/woman.jpg" alt="A blurred portrait of the woman, the second Dehumain origin." loading="lazy" />
+            </div>
+            <figcaption><span class="member-name">The woman</span><span class="member-status">Coming soon</span></figcaption>
+          </figure>
+        </div>
+        <div class="tree-branches" aria-hidden="true"></div>
+        <div class="tree-stem" aria-hidden="true"></div>
+        <div class="cradle-label">The Cradle</div>
+        <div class="tree-stem tree-stem--short" aria-hidden="true"></div>
+        <figure class="family-member family-member--child">
+          <div class="family-portrait family-portrait--unrevealed family-portrait--baby">
+            <img src="./assets/baby.jpg" alt="A blurred baby portrait, the future generation born from both origins." loading="lazy" />
+          </div>
+          <figcaption><span class="member-name">The born</span><span class="member-status">Yet to awaken</span></figcaption>
+        </figure>
+      </div>
+    </section>
     </main>
+    <footer class="footer">
+      <a class="footer-wordmark" href="#top" aria-label="Dehumain, back to top">dehumain</a>
+      <p>Artificial origins. A lineage of their own.</p>
+      <span class="footer-copyright">&copy; <span id="year">2026</span> dehumain</span>
+    </footer>
   </body>
 </html>
