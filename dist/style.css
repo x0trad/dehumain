@@ -46,7 +46,7 @@ html { scroll-behavior: smooth; }
 h1 {
   margin: 0;
   font-family: "Apple Garamond", Garamond, Georgia, serif;
-  font-size: clamp(5.25rem, 14.5vw, 17rem);
+  font-size: clamp(4.2rem, 11.6vw, 13.6rem);
   font-weight: 400;
   line-height: 1;
   letter-spacing: -0.035em;
@@ -60,7 +60,7 @@ h1 {
   justify-content: center;
   min-width: 8.25rem;
   min-height: 2.875rem;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem;
   border: 1px solid rgba(242, 238, 229, 0.6);
   border-radius: 999px;
   background: rgba(16, 17, 15, 0.12);
@@ -70,10 +70,10 @@ h1 {
   line-height: 1.2;
   letter-spacing: 0.04em;
   cursor: pointer;
-  transition: background 180ms ease, color 180ms ease, border-color 180ms ease;
+  transition: background 180ms ease, color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
-.mint:hover { background: #f2eee5; color: #10110f; border-color: #f2eee5; }
+.mint:hover, .mint:focus-visible { background: #f2eee5; color: #10110f; border-color: #f2eee5; box-shadow: 0 0 16px rgba(242, 238, 229, 0.45), 0 0 40px rgba(242, 238, 229, 0.2); }
 .mint:active { background: #ddd7cd; }
 .mint:focus-visible { outline: 2px solid #f2eee5; outline-offset: 5px; }
 .mint-status { margin: 0.875rem 0 0; min-height: 1.5em; font-size: 0.875rem; line-height: 1.5; color: #e0ddd5; }
@@ -123,7 +123,7 @@ h1 {
 
 @media (max-width: 600px) {
   .identity { padding-top: max(4rem, 9svh); }
-  h1 { font-size: clamp(4.5rem, 22vw, 8rem); }
+  h1 { font-size: clamp(3.6rem, 17.6vw, 6.4rem); }
   .mint-area { margin-top: 1.75rem; }
   .portrait { object-position: 49% 100%; }
   .lineage { padding-inline: 1.25rem; }
@@ -133,7 +133,7 @@ h1 {
 
 @media (max-height: 500px) and (min-width: 601px) {
   .identity { padding-top: 1.5rem; }
-  h1 { font-size: clamp(5rem, 12vw, 8rem); }
+  h1 { font-size: clamp(4rem, 9.6vw, 6.4rem); }
   .mint-area { margin-top: 0.5rem; }
 }
 
