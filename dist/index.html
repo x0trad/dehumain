@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2310110f'/%3E%3Ctext x='32' y='48' text-anchor='middle' font-family='Garamond,serif' font-size='55' fill='%23f2eee5'%3Ed%3C/text%3E%3C/svg%3E" />
     <link rel="preload" href="./assets/apple-garamond.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="preload" href="./assets/dehumain.jpg" as="image" fetchpriority="high" />
-    <link rel="stylesheet" href="./style.css?v=6" />
+    <link rel="stylesheet" href="./style.css?v=7" />
     <script src="./app.js?v=3" defer></script>
   </head>
   <body>
@@ -55,10 +55,16 @@
             <figcaption><span class="member-name">The woman</span><span class="member-status">Coming soon</span></figcaption>
           </figure>
         </div>
-        <div class="tree-branches" aria-hidden="true"></div>
-        <div class="tree-stem" aria-hidden="true"></div>
+        <svg class="tree-connections" viewBox="0 0 208 50" preserveAspectRatio="none" aria-hidden="true">
+          <path class="connection-track" d="M1 1 V17 Q1 25 9 25 H96 Q104 25 104 33 V50 M207 1 V17 Q207 25 199 25 H112 Q104 25 104 33" />
+          <path class="connection-pulse" pathLength="100" d="M1 1 V17 Q1 25 9 25 H96 Q104 25 104 33 V50" />
+          <path class="connection-pulse" pathLength="100" d="M207 1 V17 Q207 25 199 25 H112 Q104 25 104 33 V50" />
+        </svg>
         <div class="cradle-label">The Cradle</div>
-        <div class="tree-stem tree-stem--short" aria-hidden="true"></div>
+        <svg class="tree-connection-child" viewBox="0 0 8 28" aria-hidden="true">
+          <path class="connection-track" d="M4 0 V28" />
+          <path class="connection-pulse connection-pulse--child" pathLength="100" d="M4 0 V28" />
+        </svg>
         <figure class="family-member family-member--child">
           <div class="family-portrait family-portrait--unrevealed family-portrait--baby">
             <img src="./assets/baby.jpg" alt="A blurred baby portrait, the future generation born from both origins." loading="lazy" />
