@@ -156,3 +156,24 @@ h1 {
   .connection-pulse { animation: none; opacity: 0; }
   .cradle-label { animation: none; }
 }
+
+/* A growing network of NFT identities and their individual tokens. */
+.swarm { padding: 4.5rem 1.25rem 2rem; text-align: center; overflow: hidden; }
+.swarm-heading { max-width: 39rem; margin: 0 auto 2.5rem; }
+.swarm-heading h2 { margin: 0 0 1.25rem; font: 400 clamp(2.5rem, 5vw, 3.75rem)/1.05 "Apple Garamond", Garamond, Georgia, serif; letter-spacing: -.025em; }
+.swarm-heading > p:last-child { color: #b6b5ac; font-size: 1rem; line-height: 1.8; }
+.swarm-map { max-width: 37.5rem; margin: auto; mask-image: linear-gradient(#000 0%, #000 60%, transparent 100%); }
+.swarm-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(.75rem, 4vw, 2rem); padding: 0 .25rem; }
+.swarm-row--0 { grid-template-columns: minmax(0, 1fr); width: calc(100% / 3); margin: auto; }
+.swarm-card { position: relative; border: 1px solid #494538; border-radius: 20px; padding: 1rem .35rem; background: radial-gradient(ellipse at top, #28261e, #151612 75%); }
+.swarm-nft { display: block; color: #aba799; font-size: .65rem; letter-spacing: .1em; }
+.swarm-token { display: block; margin: .65rem 0 .35rem; color: #ead9af; font: 400 clamp(1.25rem, 3.4vw, 1.9rem)/1 "Apple Garamond", Garamond, Georgia, serif; }
+.swarm-card-label { font-size: .6rem; color: #aaa596; }
+.swarm-fork { display: block; width: 100%; height: 3rem; overflow: visible; }
+.swarm-row--2, .swarm-row--3, .swarm-row--4 { padding-top: 2rem; }
+.swarm-row:not(.swarm-row--0):not(.swarm-row--1) .swarm-card::before { content: ""; position: absolute; left: 50%; bottom: 100%; width: 1px; height: 2rem; background: linear-gradient(#6e6246, #a7925a); }
+.swarm-row--2 { opacity: .85; }
+.swarm-row--3 { filter: blur(2px); opacity: .6; }
+.swarm-row--4 { filter: blur(5px); opacity: .35; }
+.swarm-ending { margin: -.5rem 0 1rem; color: #aaa596; font: 400 1.5rem/1.3 "Apple Garamond", Garamond, Georgia, serif; }
+@media (max-width: 600px) { .desktop-break { display: none; } .swarm { padding-top: 3rem; } .swarm-nft { font-size: .55rem; letter-spacing: .04em; } }
