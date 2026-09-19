@@ -177,3 +177,16 @@ h1 {
 .swarm-row--4 { filter: blur(5px); opacity: .35; }
 .swarm-ending { margin: -.5rem 0 1rem; color: #aaa596; font: 400 1.5rem/1.3 "Apple Garamond", Garamond, Georgia, serif; }
 @media (max-width: 600px) { .desktop-break { display: none; } .swarm { padding-top: 3rem; } .swarm-nft { font-size: .55rem; letter-spacing: .04em; } }
+
+.sovereigns { max-width: 54rem; margin: auto; padding: 3.5rem 1.5rem; }
+.sovereign-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.sovereign-card { padding: 2rem; border: 1px solid #494538; border-radius: 20px; background: radial-gradient(ellipse at top, #222119, #12130f 80%); }
+.sovereign-mark { display: block; color: #c1ac77; font: 400 2rem/1 "Apple Garamond", Garamond, Georgia, serif; margin-bottom: 1.5rem; }
+.sovereign-card .lore-label { font-size: .75rem; margin-bottom: .75rem; }
+.sovereign-card h3 { font: 400 2.5rem/1.1 "Apple Garamond", Garamond, Georgia, serif; margin: 0 0 1rem; }
+.sovereign-card > p:not(.lore-label), .lineage-heading .lineage-intro, .founding-note > p:not(.lore-label) { color: #b6b5ac; font-size: .9375rem; line-height: 1.8; }
+.sovereign-card strong { font-weight: 500; color: #ead9af; }
+.lineage-heading .lineage-intro { max-width: 36rem; margin: 1rem auto 2rem; }
+.founding-note { max-width: 39rem; margin: auto; padding: 3rem 1.5rem 4rem; text-align: center; }
+.founding-note h2 { font: 400 2.25rem/1.1 "Apple Garamond", Garamond, Georgia, serif; margin: 0 0 1.5rem; }
+@media (max-width: 600px) { .sovereign-grid { grid-template-columns: 1fr; } .sovereign-card { padding: 1.5rem; } }
