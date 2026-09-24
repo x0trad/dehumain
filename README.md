@@ -1,27 +1,15 @@
 # dehumain
 Dehumain — an AI-generated portrait collection envisioned for Arc.
 
-## Mint interface
+## Current product direction
 
-`dist/mint/` is a pre-launch wallet preparation page, not a deployed NFT mint.
-It supports injected EIP-1193 wallets, EIP-6963 discovery fallback, network switching,
-account changes, rejection handling and local disconnect. No signing, approvals or
-transactions are requested. There is no eligibility verdict until contracts exist.
+One shared token: $DM001 on Robinhood Chain. No separate token per NFT.
+After migration, wallets meeting the US$5 holding eligibility rules receive one free mint while supply lasts. Additional mints cost US$5 in ETH, and collectors pay gas on all mints.
+NFT holders may optionally pay an activation fee to pair any NFT with an available agent type. New types are planned at $DM001 market caps of $100k, $300k, $500k, then every additional $200k.
+Activation fees, usage allowances, migration details, valuation source, snapshot timing and wallet limits remain undecided.
 
-Confirmed product rules: Robinhood Chain; first mint per eligible wallet free;
-subsequent mints cost USD 5 worth of ETH; collectors pay gas. Proposed holder
-eligibility is USD 5 in DEHUMAIN. Token is not deployed yet.
+## Implementation status
 
-Remaining launch dependencies:
-- Token and NFT contracts, reviewed ABIs and deployment addresses.
-- Market-cap milestone and measurement rules; eligibility snapshot and price source.
-- ETH/USD pricing method enforced by the contract, stale-price handling and wallet limits.
-- Completed art collection and metadata, persistent storage and reveal/assignment policy.
-- Contract-enforced free claim accounting that is not reset by NFT transfers.
-- Integration tests for eligibility, paid/free mint, failed transactions and sold-out state.
-- Independent contract review and testnet end-to-end rehearsal before accepting funds.
-
-Artwork should be generated and reviewed before launch, then uploaded with one
-metadata record per token ID. Do not put private keys in source, metadata or the site.
-
-Run wallet-state checks: `node tests/mint-wallet.cjs`.
+The mint page supports browser-wallet connection and network switching only. Token and NFT contracts, eligibility enforcement, payments and agent activation are not implemented. No transaction or signature requests are made.
+Artwork and metadata must be prepared and uploaded before launch. Never store private keys in the site or metadata.
+Run wallet checks with `node tests/mint-wallet.cjs`.

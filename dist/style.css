@@ -190,3 +190,17 @@ h1 {
 .founding-note { max-width: 39rem; margin: auto; padding: 3rem 1.5rem 4rem; text-align: center; }
 .founding-note h2 { font: 400 2.25rem/1.1 "Apple Garamond", Garamond, Georgia, serif; margin: 0 0 1.5rem; }
 @media (max-width: 600px) { .sovereign-grid { grid-template-columns: 1fr; } .sovereign-card { padding: 1.5rem; } }
+
+.launch-flow { list-style:none; padding:0; margin:0 auto; max-width:40rem; text-align:left; }
+.launch-flow li { position:relative; padding:1.5rem 1.75rem; margin:0 0 2rem; border:1px solid #494538; border-radius:20px; background:#171813; }
+.launch-flow li:not(:last-child)::after { content:""; position:absolute; top:100%; left:50%; height:2rem; width:1px; background:#c1ac77; }
+.launch-flow li>span { font-size:.875rem; letter-spacing:.08em; color:#c1ac77; }
+.launch-flow h3 { font:400 2rem/1.15 "Apple Garamond",Garamond,serif; margin:.6rem 0; }
+.launch-flow p,.agent-explainer { color:#b6b5ac; font-size:1rem; line-height:1.75; margin:.5rem 0 0; }
+.agent-milestones { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1rem; list-style:none; padding:0; margin:2rem 0; }
+.agent-milestones li { padding:1.25rem 1rem; border-top:1px solid #b59c65; background:#181913; border-radius:0 0 20px 20px; }
+.agent-milestones li>span { color:#e2c990; font:400 1.75rem/1.2 "Apple Garamond",Garamond,serif; }
+.agent-milestones h3 { font-size:1rem; font-weight:500; margin:1rem 0 .5rem; }
+.agent-milestones p { font-size:.875rem; color:#aaa99f; line-height:1.5; }
+.agent-explainer { max-width:38rem; margin:auto; text-align:center; }
+@media(max-width:600px) { .agent-milestones { grid-template-columns:repeat(2,minmax(0,1fr)); } }
