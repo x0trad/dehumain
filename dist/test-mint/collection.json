@@ -1,0 +1,71 @@
+[
+  {
+    "name": "Dehumain Test #1",
+    "description": "Dehumain testnet rehearsal. No production utility or monetary value.",
+    "image": "assets/1.png",
+    "attributes": [
+      {
+        "trait_type": "Eyes",
+        "value": "nande"
+      },
+      {
+        "trait_type": "Head",
+        "value": "coolguh"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "angry"
+      },
+      {
+        "trait_type": "Body",
+        "value": "gongxi"
+      }
+    ]
+  },
+  {
+    "name": "Dehumain Test #2",
+    "description": "Dehumain testnet rehearsal. No production utility or monetary value.",
+    "image": "assets/2.png",
+    "attributes": [
+      {
+        "trait_type": "Eyes",
+        "value": "nerd"
+      },
+      {
+        "trait_type": "Head",
+        "value": "holy grail"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "Hey"
+      },
+      {
+        "trait_type": "Body",
+        "value": "knight"
+      }
+    ]
+  },
+  {
+    "name": "Dehumain Test #3",
+    "description": "Dehumain testnet rehearsal. No production utility or monetary value.",
+    "image": "assets/3.png",
+    "attributes": [
+      {
+        "trait_type": "Eyes",
+        "value": "closeeyes"
+      },
+      {
+        "trait_type": "Head",
+        "value": "systema"
+      },
+      {
+        "trait_type": "Mouth",
+        "value": "phantom"
+      },
+      {
+        "trait_type": "Body",
+        "value": "astro"
+      }
+    ]
+  }
+]

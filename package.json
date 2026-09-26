@@ -1,0 +1,31 @@
+{
+  "name": "dehumain",
+  "version": "1.0.0",
+  "description": "Dehumain website and testnet mint rehearsal",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build:test": "node scripts/build-test.cjs",
+    "test": "node tests/mint-wallet.cjs && node tests/test-contract.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x0trad/dehumain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/x0trad/dehumain/issues"
+  },
+  "homepage": "https://github.com/x0trad/dehumain#readme",
+  "private": true,
+  "devDependencies": {
+    "@openzeppelin/contracts": "5.4.0",
+    "ethers": "6.16.0",
+    "ganache": "7.9.2",
+    "solc": "0.8.30"
+  }
+}
