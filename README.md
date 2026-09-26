@@ -27,10 +27,13 @@ Install development dependencies with `npm ci`, compile with `npm run build:test
 Local contract checks passed: access gate, free-first pricing, exact paid pricing, transfer does not reset free mint, metadata, supply cap, refund authorization and mainnet rejection.
 Ganache uses its JavaScript fallback on this Node installation. It is development-only.
 
-### Remaining before on-chain use
+### Current on-chain test state
 
-- User deploys with test ETH through their wallet; record the resulting contract address.
-- Complete three actual testnet mints and verify ownership and tokenURI on the explorer.
+- Contract: [`0x991d85bc21705B9fc1d774222214e887c8626f9d`](https://explorer.testnet.chain.robinhood.com/address/0x991d85bc21705B9fc1d774222214e887c8626f9d)
+- Deployment: [`0x0dae7844f1c729d7b37e9709d825d3ecbae7543b0d91c6a33195ceefaceb30ca`](https://explorer.testnet.chain.robinhood.com/tx/0x0dae7844f1c729d7b37e9709d825d3ecbae7543b0d91c6a33195ceefaceb30ca)
+- Test NFT #1 mint: [`0x9821f92827e4bc112880d454414082ff4c250b48a683059dacfe5cfb1a4614f9`](https://explorer.testnet.chain.robinhood.com/tx/0x9821f92827e4bc112880d454414082ff4c250b48a683059dacfe5cfb1a4614f9)
+- Verified after mint: supply `1 / 3`, wallet mint count `1`, and token ID 1 belongs to the designated wallet.
+- Remaining: mint test NFTs #2 and #3 at 0.0001 test ETH each plus testnet gas, then verify both on the explorer.
 
-No test contract has been deployed. No on-chain mint or production change has been made.
+No production contract or production mint has been made.
 The main `/mint/` page remains prelaunch. See `CLAUDE.md` for a concise continuation handoff.

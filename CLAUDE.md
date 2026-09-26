@@ -21,7 +21,10 @@ Read `README.md` before changing anything. The current production site is a stat
 - The fixed test price is a simulation. It is not a US$5 oracle implementation.
 - The allowlisted wallet simulates Dehumain-token eligibility. No token contract or agent activation exists.
 - The test contract rejects deployment on Robinhood Chain mainnet and permits only chain IDs 46630 and 1337.
-- No test contract has been deployed unless a later commit records an address and explorer link.
+- Deployed test contract: `0x991d85bc21705B9fc1d774222214e887c8626f9d`.
+- Deployment transaction: `0x0dae7844f1c729d7b37e9709d825d3ecbae7543b0d91c6a33195ceefaceb30ca`.
+- Test NFT #1 was minted to the designated wallet in transaction `0x9821f92827e4bc112880d454414082ff4c250b48a683059dacfe5cfb1a4614f9`.
+- Current verified state after that mint: `minted = 1`, wallet mint count `= 1`, and token ID 1 is owned by the designated wallet.
 
 ## Commands
 
@@ -42,4 +45,4 @@ npm test
 
 ## Safe next step
 
-After the test page is published, open `/test-mint/`, connect only the designated public wallet, obtain Robinhood Chain test ETH, deploy once through the wallet, and record the resulting contract address. Every deployment or mint requires the user to review and approve the wallet transaction.
+Open `/test-mint/`, connect only the designated public wallet, load the prefilled deployed contract, and continue with test NFT #2 when ready. The remaining two mints cost `0.0001` test ETH each plus testnet gas. Every mint requires the user to review and approve the Rabby transaction.

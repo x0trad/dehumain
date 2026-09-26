@@ -46,6 +46,7 @@ $('switch').onclick=()=>run(async()=>{
 });
 $('load').onclick=()=>run(async()=>{
  await checkWallet(); const target=$('contract').value.trim();if(!ethers.isAddress(target))throw Error('Enter a valid test contract address.');
+ const code=await signer.provider.getCode(target);if(code==='0x')throw Error('No contract exists at this address. A wallet address cannot be used as the test contract address.');
  const candidate=new ethers.Contract(target,artifact.abi,signer);
  if((await candidate.tester()).toLowerCase()!==TESTER||await candidate.MAX_SUPPLY()!==3n||await candidate.PAID_PRICE()!==ethers.parseEther('0.0001')||await candidate.name()!=='Dehumain Test')throw Error('This contract does not match the test configuration.');
  nft=candidate;await stats();say('Test collection loaded. Review the price before minting.');
