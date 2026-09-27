@@ -6,7 +6,7 @@ Status: local production candidate, not audited, deployed, hosted, or connected 
 
 Live US$5 token holding required at every mint, after Pons graduation. First mint per wallet is free; subsequent mints cost US$5 in ETH plus gas. This live-check policy is an implementation assumption pending owner confirmation. Transfers do not reset the free claim. A user can transfer holdings across wallets, so this policy does NOT guarantee one free claim per person. Snapshot eligibility would require different implementation.
 
-Pons docs checked 2026-09-27: https://docs.ponsfamily.com/ — graduation stays in the existing token/WETH pool, no migration event. Token address will be supplied by the owner. Public copy must not reveal a ticker.
+Pons docs checked 2026-09-27: https://docs.ponsfamily.com/ — graduation stays in the existing token/WETH pool, no migration event. The owner-supplied production token is `0xFA78111742D290DCF3b5266b9f6dEb75033e4602`. On-chain reads confirm the name Dehumain, 18 decimals and a fixed supply of 1,000,000,000 tokens. Pons lists it as an ETH-paired V2 launch that is still on the bonding curve, so production eligibility must remain closed until the adapter independently confirms graduation. Public site copy must not reveal the ticker.
 
 ## Architecture
 
@@ -28,7 +28,7 @@ Without MINT_ENABLED=true the API runs disabled; /quote returns 503 and /health 
 
 - RPC_URL: production RPC on chain 4663.
 - NFT_ADDRESS: reviewed production NFT deployment.
-- TOKEN_ADDRESS: owner's confirmed Dehumain token address.
+- TOKEN_ADDRESS: `0xFA78111742D290DCF3b5266b9f6dEb75033e4602` (pre-filled in `.env.example`).
 - QUOTE_SIGNER_KEY: secret supplied by the server host's secret manager, never browser code.
 - PRICE_ADAPTER_MODULE: absolute path to reviewed server module exporting async read().
 - MINT_ENABLED=true only after launch review and infrastructure configuration.
@@ -45,6 +45,6 @@ No price adapter or credentials are fabricated. Adapter must verify the token's 
 
 ## Still required
 
-Final supply/wallet cap, full approved artwork and metadata CID, token launch address and pool verification, production price adapter, graduation check, admin/treasury selection, independent contract review, HTTPS backend hosting, request rate limits, uptime/quote monitoring, final frontend transaction integration, controlled production deployment and launch. Existing main mint page remains disabled. No mainnet transaction has been sent.
+Final supply/wallet cap, full approved artwork and metadata CID, canonical post-graduation pool verification, production price adapter, graduation check, admin/treasury selection, independent contract review, HTTPS backend hosting, request rate limits, uptime/quote monitoring, final frontend transaction integration, controlled production deployment and launch. Existing main mint page remains disabled. No production NFT deployment or mint transaction has been sent.
 
 Use the tests as engineering validation, not an audit or a promise of launch readiness. Agent activation is separate and is not implemented here.

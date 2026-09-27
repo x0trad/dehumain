@@ -10,8 +10,9 @@ Activation fees, usage allowances, migration details, valuation source, snapshot
 
 ## Implementation status
 
-The mint page supports browser-wallet connection and network switching only. Token and NFT contracts, eligibility enforcement, payments and agent activation are not implemented. No transaction or signature requests are made.
-Artwork and metadata must be prepared and uploaded before launch. Never store private keys in the site or metadata.
+The production Dehumain token is live on Robinhood Chain at [`0xFA78111742D290DCF3b5266b9f6dEb75033e4602`](https://www.ponsfamily.com/launchpad/0xFA78111742D290DCF3b5266b9f6dEb75033e4602). Pons currently lists it on its ETH bonding curve, before graduation. The public site intentionally does not reveal the ticker.
+
+The mint page supports browser-wallet connection and network switching only. A production NFT contract and quote service have been prepared locally with token-holding, free-first-mint and paid-mint rules, but they are not deployed, hosted or connected to the public mint page. Minting must remain disabled until Pons graduation is independently verified by the production adapter. Agent activation is not implemented. Never store private keys in the site or metadata.
 Run wallet checks with `node tests/mint-wallet.cjs`.
 
 ## Test mint rehearsal
@@ -35,7 +36,7 @@ Ganache uses its JavaScript fallback on this Node installation. It is developmen
 - Verified after mint: supply `1 / 3`, wallet mint count `1`, and token ID 1 belongs to the designated wallet.
 - V1 remains on-chain unchanged. The new two-wallet V2 contract must be deployed separately and its address recorded here.
 
-No production contract or production mint has been made.
+No production NFT contract or production mint has been made.
 The main `/mint/` page remains prelaunch. See `CLAUDE.md` for a concise continuation handoff.
 
 ## Collection generation
