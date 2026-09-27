@@ -37,3 +37,7 @@ Ganache uses its JavaScript fallback on this Node installation. It is developmen
 
 No production contract or production mint has been made.
 The main `/mint/` page remains prelaunch. See `CLAUDE.md` for a concise continuation handoff.
+
+## Collection generation
+
+The offline Trait Lab compositor and its 130 source layers are in `generator/`. A balanced 10,000-image collection has been generated locally and validated. Generated media is intentionally excluded from Git because it is approximately 4.9 GiB. See `COLLECTION_STATUS.md` for exact counts, integrity references and the required image-first IPFS upload sequence. The current metadata uses local review paths and is not ready to mint until the image CID is inserted and the metadata directory is uploaded separately.

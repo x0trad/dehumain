@@ -1,0 +1,1332 @@
+{
+  "name": "Dehumain",
+  "description": "An identity formed within the Dehumain network.",
+  "seed": "dehumain-sample-v1",
+  "source": "https://claude.ai/artifact/8hmVZJen2q4Vo7dqm3NR7C",
+  "source_sha256": "16e9e82fb9f02deff0a05c3d98357b163fe75cccf360f98764e3f65f480a3a14",
+  "paint_order": [
+    "Body",
+    "Mouth",
+    "Head",
+    "Eyes"
+  ],
+  "groups": {
+    "Body": [
+      {
+        "name": "launch",
+        "weight": 1,
+        "file": "assets/body-000.webp",
+        "sha256": "576b094a21ed024ee7a898f036a00db54ac0698a5501b44d2a91c318fe6d3cfd",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "astro",
+        "weight": 1,
+        "file": "assets/body-001.webp",
+        "sha256": "3aa37babbe943f965b0b345128be1b0c34b53e1b7c059b6c64aaf433c6948283",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "Norc",
+        "weight": 1,
+        "file": "assets/body-002.webp",
+        "sha256": "9f59635d5721fbfc38a69c898f2bc11b8cc4b8b2267d73caec7c3a2f9bfb33da",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "Guru",
+        "weight": 1,
+        "file": "assets/body-003.webp",
+        "sha256": "4979a3a2a6d2f0ba1042139108b19fc20a7949af0b87b0a8581f5ec7cc409afe",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "MediEvil",
+        "weight": 1,
+        "file": "assets/body-004.webp",
+        "sha256": "3b4da59cb6e893bfd7806c123e3e40f0c3cc70edd8bb98a0af321bf331a9b5ea",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "sami",
+        "weight": 1,
+        "file": "assets/body-005.webp",
+        "sha256": "72df4846e7b02894a1d420dd5ec3b600edc613fe76817b9940aae6ca852bec36",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "joker",
+        "weight": 1,
+        "file": "assets/body-006.webp",
+        "sha256": "3cd53f4de91b571721630cd24e92ced6282e8f65bc8127ed562195cf518f6601",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "knight",
+        "weight": 1,
+        "file": "assets/body-007.webp",
+        "sha256": "2b49710e5c353da5f9bdb08616d1a67a3cb880c639896f147800c8805017a1d5",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "old english style",
+        "weight": 1,
+        "file": "assets/body-008.webp",
+        "sha256": "45e65fe256f3bce2cb1ea942721f9b40269e23343dd5d8f9b39ea21f9d097fed",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "maxi",
+        "weight": 1,
+        "file": "assets/body-009.webp",
+        "sha256": "f7a355daf6d7f4e9fff27397657c2c0022cb8dc3fee522cff010a3a70d17c4fc",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "luke",
+        "weight": 1,
+        "file": "assets/body-010.webp",
+        "sha256": "b6c6a6e8725f36d1e4ec80d639ac50e02c77481699bd2799b5c8eeec44f80f91",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "jetfighter",
+        "weight": 1,
+        "file": "assets/body-011.webp",
+        "sha256": "a2d552eabdbfd0d33ece7a07d9aec4a3d5f1b7babd340bbd666b929e67fd2382",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "jedi",
+        "weight": 1,
+        "file": "assets/body-012.webp",
+        "sha256": "83c0859dd3aa2e9e63b805c43ad03a31b4952b7730672c7a1d00541ad031bebb",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "robot",
+        "weight": 1,
+        "file": "assets/body-013.webp",
+        "sha256": "5b075b55402f0bd6ae6eed370d9e5cb3aedd597d61179f04826bfedc8948767d",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "cyberpunk jacket",
+        "weight": 1,
+        "file": "assets/body-014.webp",
+        "sha256": "6685f405f435780c4d1735b60d9248af0b0b140368c19a845a6c4e45c6850344",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "halfbody",
+        "weight": 1,
+        "file": "assets/body-015.webp",
+        "sha256": "3d2dc37797937e61addac10de1896797c667d067f838d05a922cfe5f2642ed1a",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "grey shirt",
+        "weight": 1,
+        "file": "assets/body-016.webp",
+        "sha256": "8e5a39007d429313a7901d4f313df736df437ea425c1f3886f9bdde06c6dc9b4",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "hobo",
+        "weight": 1,
+        "file": "assets/body-017.webp",
+        "sha256": "3350b8ea8e5c731956afeb94271e0ea0d1c24fffb168ea7de3b07e251f9198df",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "shuttle",
+        "weight": 1,
+        "file": "assets/body-018.webp",
+        "sha256": "a20ce68bf3b69af65801d353e7677d86ea5a389ea79a5b32310ae8a068ff1874",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "tats",
+        "weight": 1,
+        "file": "assets/body-019.webp",
+        "sha256": "7a9f88e8d7e970aa1ce20b8529e325ef4fe89c401eedcaca0146aa8da01165f1",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "whitey",
+        "weight": 1,
+        "file": "assets/body-020.webp",
+        "sha256": "4cfc46378089a10c3aadda75347f7c07707bebb1557649812d331977070410fa",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "prince",
+        "weight": 1,
+        "file": "assets/body-021.webp",
+        "sha256": "065743ed5fd5e3abea377e5b46a7a686e30a961950848480c2a336e7e6930fba",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "shifu",
+        "weight": 1,
+        "file": "assets/body-022.webp",
+        "sha256": "333227837ce0478235fd484a0718a731fb7ea95981717cb22ac54d3f8597b4be",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "goldy",
+        "weight": 1,
+        "file": "assets/body-023.webp",
+        "sha256": "33b45a2861ec9f422118ac0f8404612887745e19781640abb525db924b8307ee",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "ami",
+        "weight": 1,
+        "file": "assets/body-024.webp",
+        "sha256": "29edcc6282017db582ed8daf6aa2d48baa28b35155f9fd0ad3b72c908148f82c",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "venom",
+        "weight": 1,
+        "file": "assets/body-025.webp",
+        "sha256": "1ad19a98b3e181f1fb526405e4f11240a40389d4ad6ca2367fe9c04b82a048db",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "malai",
+        "weight": 1,
+        "file": "assets/body-026.webp",
+        "sha256": "38d8b6b31a3a132586b6b9e638474546f923e2e07521e1254fa7249506287c44",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "gongxi",
+        "weight": 1,
+        "file": "assets/body-027.webp",
+        "sha256": "728acebb35e2c612f2e48f0d25365545d437d3957d1cdc7d500bc0acfc82af5e",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "gold chain",
+        "weight": 1,
+        "file": "assets/body-028.webp",
+        "sha256": "ce6a83d8478aa16a20171c84f28c178e98cc5c597d6ef12e917e0469d8fc05b6",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "astronaut suit",
+        "weight": 1,
+        "file": "assets/body-029.webp",
+        "sha256": "3c1223faa3b129b12e56bdbe3eb5cbd6a6beecfdda349c7e695fd15fe476212f",
+        "size": [
+          900,
+          900
+        ]
+      }
+    ],
+    "Mouth": [
+      {
+        "name": "cigarette",
+        "weight": 1,
+        "file": "assets/mouth-000.webp",
+        "sha256": "99738995360ba47389fe90119567127059aabe410f6ad1dae7a56b3602856f10",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "angry",
+        "weight": 1,
+        "file": "assets/mouth-001.webp",
+        "sha256": "40ebcf1673e2845c4aa2f64c83c9146f1bab951ca5c5870e30b0f5d96726a2b7",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "vape",
+        "weight": 1,
+        "file": "assets/mouth-002.webp",
+        "sha256": "ef28b5c163511b3b74386ba76182c8dd9252b049c8a4b769309406167a3c78c4",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "chiu",
+        "weight": 1,
+        "file": "assets/mouth-003.webp",
+        "sha256": "c5dbfafc51a494c2c398514ff36bf10a297dd623cf16d6fcb2723088dd335a34",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "perfectguy",
+        "weight": 1,
+        "file": "assets/mouth-004.webp",
+        "sha256": "6718d6105e498c19ccc4e1370bb785bdf1aa313de90a2a3e61af952ea4fabe08",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "pills",
+        "weight": 1,
+        "file": "assets/mouth-005.webp",
+        "sha256": "1e389dd3355f1fc23e05eb3247f1988d4a9ce92e0faaa31b1dedbde3673f3600",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "crypto",
+        "weight": 1,
+        "file": "assets/mouth-006.webp",
+        "sha256": "cd46a2e25373fa8718aefe4f4ecfa7b404ab63d54bd0696290a829c5dd475683",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "robotic",
+        "weight": 1,
+        "file": "assets/mouth-007.webp",
+        "sha256": "0511d49149dcaae4a23aae28e37d57da074488e52305074ab24a9d3dde364ae9",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "snake",
+        "weight": 1,
+        "file": "assets/mouth-008.webp",
+        "sha256": "f5c59220f6645d876ad2fa976e20cecf7c738eddbd7ee9578b183521de360b11",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "lizard tongue",
+        "weight": 1,
+        "file": "assets/mouth-009.webp",
+        "sha256": "a86362ea92f89ee5b269051261a6847cb72a394a72763942fd2070dcce258c07",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "gecko",
+        "weight": 1,
+        "file": "assets/mouth-010.webp",
+        "sha256": "379c1ab4761c676402069b9f0243eb9c85e2facc5d5a09b0b0b3a7e2b4ec4395",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "smoking cigar mouth",
+        "weight": 1,
+        "file": "assets/mouth-011.webp",
+        "sha256": "43570c8f87f6c624b3abab2e5637962e8aeb0a7a1fd95ba72317ef4afc1dfb9e",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "weirdmoustache",
+        "weight": 1,
+        "file": "assets/mouth-012.webp",
+        "sha256": "16adf91e82344efefd4da5f77c1d9f87f0a9636a5b1b94018cb530dd7edbf5a4",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "Hey",
+        "weight": 1,
+        "file": "assets/mouth-013.webp",
+        "sha256": "cf828a4b114db1e7d809eb15e3c20b26ebd9263a537115c3987bcf5c40489153",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "english",
+        "weight": 1,
+        "file": "assets/mouth-014.webp",
+        "sha256": "63d401a42f2dca6c19365c40431312631307467e1afb3060f23d0a1e2a57de08",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "zorro",
+        "weight": 1,
+        "file": "assets/mouth-015.webp",
+        "sha256": "864be2825384fb93894bef4fb1bced628f2189bc8f4cd1ced76100a8ab739b13",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "threemuscat",
+        "weight": 1,
+        "file": "assets/mouth-016.webp",
+        "sha256": "f1bf7421252756d5aeda98637edf7c03e9c9d0e2ad53991d7bcc8d9b30b18190",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "guy",
+        "weight": 1,
+        "file": "assets/mouth-017.webp",
+        "sha256": "df1b11aacceb69fe4e35b02dad19945717b75985a3e29a4e578418a09d21aaa6",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "shin",
+        "weight": 1,
+        "file": "assets/mouth-018.webp",
+        "sha256": "88d784e2dd0dad4fe049c4219a2d0991cca14d4571bbf1a0d9ff1d393f996a7c",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "cyberpunk",
+        "weight": 1,
+        "file": "assets/mouth-019.webp",
+        "sha256": "bba923fc2513da595bda607d9f98c960eec1db4918d3f5d1ca48b88b8e6f847f",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "punker",
+        "weight": 1,
+        "file": "assets/mouth-020.webp",
+        "sha256": "3e00e5aeb9e3dd9e95fdf368c2fc9e188176e0fe3585f1b4d7b67e41d45b38ce",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "shill",
+        "weight": 1,
+        "file": "assets/mouth-021.webp",
+        "sha256": "d9096902aacf250442b33fe10afaa73c7c44daa8999e40dd5df19a65f5845d92",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "robot mouth",
+        "weight": 1,
+        "file": "assets/mouth-022.webp",
+        "sha256": "fa7c24903b81e13fc1f64aac474734304c44d40dc67486038c67a32d71b855a6",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "eject",
+        "weight": 1,
+        "file": "assets/mouth-023.webp",
+        "sha256": "6cb5b2194e6eb05e83ea0945ece74abf8156aae3b48d3fcaf0d84ffbe09e0f17",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "covid",
+        "weight": 1,
+        "file": "assets/mouth-024.webp",
+        "sha256": "7444c4caf392006a1db7eb94a84f2eeafe588b93ce6436f5abc091fda94b8f4e",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "beardman",
+        "weight": 1,
+        "file": "assets/mouth-025.webp",
+        "sha256": "5fe5f35cf20a85544e0318212406cfbb15f6c7827810376e1815bff24d9036e6",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "phantom",
+        "weight": 1,
+        "file": "assets/mouth-026.webp",
+        "sha256": "2db92231d57c807d9e9b6125c66a55ba6d7c4884da66184aae56990405653e93",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "cigar",
+        "weight": 1,
+        "file": "assets/mouth-027.webp",
+        "sha256": "45f92f6a9f0a8cb573ac447770d083d11ccbcd95d2895d9e8ece844777a9d58e",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "whistle",
+        "weight": 1,
+        "file": "assets/mouth-028.webp",
+        "sha256": "15101579c6979830728bae884ed4e6ceb7078ef551cbd39bfa5c5a63a4d21cd0",
+        "size": [
+          900,
+          900
+        ]
+      }
+    ],
+    "Head": [
+      {
+        "name": "blonde hair",
+        "weight": 1,
+        "file": "assets/head-000.webp",
+        "sha256": "d8f0fedb4c8ca36bdf0359dbea49bc449ebcf68963d2a626aea33c2342282493",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "specshead",
+        "weight": 1,
+        "file": "assets/head-001.webp",
+        "sha256": "d09ffc8b8b7d1e68d9429b4086ce2c5c90de310d197b9983123cc56f9a515fd3",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "wigga",
+        "weight": 1,
+        "file": "assets/head-002.webp",
+        "sha256": "ec180b4eb843164a16ecb89198f3136a909f92277197c95fa1cf480d411b8395",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "punk",
+        "weight": 1,
+        "file": "assets/head-003.webp",
+        "sha256": "a3da59ad45e41e094a9c0491f04919444bb37e34227e542f69aa3e53f3854fd6",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "frat",
+        "weight": 1,
+        "file": "assets/head-004.webp",
+        "sha256": "3fe079e7d3dd300e690e2ed257465b8ad928b4a033b81f7c3c826bde4d778b6b",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "gayish",
+        "weight": 1,
+        "file": "assets/head-005.webp",
+        "sha256": "6e632bf956383da6e82747bf00b6641f40ea0b4fdeffd557ddd9dc549e6256aa",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "sailor",
+        "weight": 1,
+        "file": "assets/head-006.webp",
+        "sha256": "4942f9a2a6e3c839ec8910850611e61e1cfd3b5ffad633e303dc78d1e1a619ec",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "baldcap",
+        "weight": 1,
+        "file": "assets/head-007.webp",
+        "sha256": "f0c20afe3f06a1d91f92714451ebd31cb3441faee75f39e1e5865d11ae2fbc55",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "chanli",
+        "weight": 1,
+        "file": "assets/head-008.webp",
+        "sha256": "5e75bcf8d925036f7ad94b03304896debfa23c00de4a4540b2cb48514603889f",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "whitecap",
+        "weight": 1,
+        "file": "assets/head-009.webp",
+        "sha256": "0c27b86413a4b3cab3b138a323ec38c19aa510318692e9538a7eea6f2f6756ca",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "robotic",
+        "weight": 1,
+        "file": "assets/head-010.webp",
+        "sha256": "2d3302b51c5b1fd94962440fbeab15938f1d32b3ccd9be1103519b24adf859ff",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "ava",
+        "weight": 1,
+        "file": "assets/head-011.webp",
+        "sha256": "829039a2bb90808721f2b83a0d975474d192e3efdf92e4cf38c260badb202298",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "lad",
+        "weight": 1,
+        "file": "assets/head-012.webp",
+        "sha256": "7f6b3156eea1e0a648965a4533639b1247a6f753c6ddbae983c5cb9ad9237667",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "coolguh",
+        "weight": 1,
+        "file": "assets/head-013.webp",
+        "sha256": "1fed3d979d4d2b6e9196b8b20052bdb7852eb08f251e596a83980375f6320ac2",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "beck",
+        "weight": 1,
+        "file": "assets/head-014.webp",
+        "sha256": "52ea73a4207d7dad906f8dfe15cbf3a0875fe2e73bf27973695748d996a98af8",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "spotnik",
+        "weight": 1,
+        "file": "assets/head-015.webp",
+        "sha256": "62f40cb78bd8e258dbfb720917196de90e4d65da5b8f6a52d9f0c5ba0aa327df",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "bluecap",
+        "weight": 1,
+        "file": "assets/head-016.webp",
+        "sha256": "7c8c16258ef8d098fcdf0ecb6831d6385a3c629b12c2e75b28b89186c0c40e4e",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "futura",
+        "weight": 1,
+        "file": "assets/head-017.webp",
+        "sha256": "777e98d151d0dfe4668fe1aebe7c665dc720a3e89d58021a73edeeef16db1fd5",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "systema",
+        "weight": 1,
+        "file": "assets/head-018.webp",
+        "sha256": "c2641eb0fc6a490f13b82cae374c3b831168794a7e835bae7f717d837c9fc684",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "just wokeup",
+        "weight": 1,
+        "file": "assets/head-019.webp",
+        "sha256": "1b8be4ad9b05af4828752cec8d0f8b1138ff6163600262a54f813bddc708ebc1",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "holy grail",
+        "weight": 1,
+        "file": "assets/head-020.webp",
+        "sha256": "7208d7c733ef05847903dd32f6a3e70657a2f1e133cac33a4b1ce588fd60ab94",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "dynamite",
+        "weight": 1,
+        "file": "assets/head-021.webp",
+        "sha256": "fa391b369bacfb20f36ebe21004e96851122b4c745139352eec82f2270361b23",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "rattle",
+        "weight": 1,
+        "file": "assets/head-022.webp",
+        "sha256": "f891fb5c34a45c7c4dd2f1f9cfc5eba062a50c03985833b2b82fc22bd40ed0c1",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "shaky",
+        "weight": 1,
+        "file": "assets/head-023.webp",
+        "sha256": "919bde8a50bbe6a0ac634189e0b0ef9437ba4b4637a2973153bb039e21f99a1e",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "kufee",
+        "weight": 1,
+        "file": "assets/head-024.webp",
+        "sha256": "b9934dd3ca37ed191317ee61f1f35639dab6d97b2740fbb953fe6b8cc9387390",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "anne",
+        "weight": 1,
+        "file": "assets/head-025.webp",
+        "sha256": "2612e9c4eb4fe0646f12024b37ab91b5b7d4e6a6888b84f1d6cc2a05b31e4089",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "habibi",
+        "weight": 1,
+        "file": "assets/head-026.webp",
+        "sha256": "9ae6fff18aa4688dec50fff926b7e109628b929eefe02b8e5965c522cf13dad8",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "manta",
+        "weight": 1,
+        "file": "assets/head-027.webp",
+        "sha256": "eac5d741ce1375081b59964e0dad58a8d1781818fb57addac6830c2ebe157ef5",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "pulse",
+        "weight": 1,
+        "file": "assets/head-028.webp",
+        "sha256": "f1b37d87982599e9ba4f6fad71a8e70fc4dc1de709448692b6badbd9591cc089",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "cyberwig",
+        "weight": 1,
+        "file": "assets/head-029.webp",
+        "sha256": "db4581ed83954835002ad6499c48c392f33a73e36978bb4a2003b2f0e1879ea2",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "donald",
+        "weight": 1,
+        "file": "assets/head-030.webp",
+        "sha256": "5b19685a7451ee53999aa3a4bdc3bd3bfe6066cba9b56a661ca37ddd7ff854b8",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "aeroplane",
+        "weight": 1,
+        "file": "assets/head-031.webp",
+        "sha256": "7361d508ba579f5b0daa32f7fc0aa1157fbaa2ca9c012076a6ec75cb067a933d",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "quicksilver",
+        "weight": 1,
+        "file": "assets/head-032.webp",
+        "sha256": "ab46d025bafc7d268deb6c59507ef951b54d652b7414830411933db26b088ac2",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "santa hat",
+        "weight": 1,
+        "file": "assets/head-033.webp",
+        "sha256": "6924254950ae6b4bafbae291bd069cdfb2dd60d14954d1db55344ee98e157703",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "navy",
+        "weight": 1,
+        "file": "assets/head-034.webp",
+        "sha256": "fa94e3e7b9ee302bc703964a9d04c97ea43fae11079cfbcbb2bd9cd0638a5f1e",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "popeye hat",
+        "weight": 1,
+        "file": "assets/head-035.webp",
+        "sha256": "8a1bee00a6bf329f0f815832d323ae606da5d2419a306d712de2ff4eedded93e",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "texas",
+        "weight": 1,
+        "file": "assets/head-036.webp",
+        "sha256": "73e2dfa81ca8bf88d93f1b7618cc009036f0da5bf178e68d85cc16ae01aad921",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "bottle cap",
+        "weight": 1,
+        "file": "assets/head-037.webp",
+        "sha256": "c404f4f6a6a777a1789c8bc325acac309da9d1466eac3ed2ecf701027aeb17a1",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "money",
+        "weight": 1,
+        "file": "assets/head-038.webp",
+        "sha256": "acf1a398bb66aad322edb340d813a66ed7ca09b30ac5b197f8c26fd1c71472a1",
+        "size": [
+          900,
+          900
+        ]
+      }
+    ],
+    "Eyes": [
+      {
+        "name": "nerd",
+        "weight": 1,
+        "file": "assets/eyes-000.webp",
+        "sha256": "1de00bc203a5d211e4c7c176e7bc4a94cfd48577fff5e685c62f4d9a0dc79346",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "weirdass",
+        "weight": 1,
+        "file": "assets/eyes-001.webp",
+        "sha256": "26a3c73edbdc13fe10ab03a70a850f2a2629584f4edfd17a4f5629b46ccbf388",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "hmmmm",
+        "weight": 1,
+        "file": "assets/eyes-002.webp",
+        "sha256": "419babbba8e000209d3522e65f0c978532a8cb99a9ae0f4360e8386e2075c0fb",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "moviestar",
+        "weight": 1,
+        "file": "assets/eyes-003.webp",
+        "sha256": "2522baad1e0472ea014eb90a035586da0dcce9f019a330c14253c61999651f12",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "gey",
+        "weight": 1,
+        "file": "assets/eyes-004.webp",
+        "sha256": "fbb2fd4b653b525d2647bddf016fc57d8a4519917d2718fc9e97423b8aad7462",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "leypinkok",
+        "weight": 1,
+        "file": "assets/eyes-005.webp",
+        "sha256": "9720341d3913c15579200424a7f986756cbcd32fa819770e7326f247ca32964a",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "marble",
+        "weight": 1,
+        "file": "assets/eyes-006.webp",
+        "sha256": "0072ce04e4b7b43b3f6b6717bb875d540d40317ae8022addf1c69826107859e3",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "pill",
+        "weight": 1,
+        "file": "assets/eyes-007.webp",
+        "sha256": "24a53c4e3a072ada8c3c9b4c9a5e25291f61aee22197f65efccaebc58b3b3df3",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "neon",
+        "weight": 1,
+        "file": "assets/eyes-008.webp",
+        "sha256": "20c0ad8362f413b46e22c37c507d480b5e1468b7fc520475110c8d018c736c6d",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "yala",
+        "weight": 1,
+        "file": "assets/eyes-009.webp",
+        "sha256": "8e008c65e136291b62c989d041d240b49749bd1a5d3fda81d4c76f43d2d3cb44",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "erk",
+        "weight": 1,
+        "file": "assets/eyes-010.webp",
+        "sha256": "4e8b79c8ff59e1c9a7736d617cd9f8bf2131e1dba5bfe9805fce25ed8101b0e1",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "nande",
+        "weight": 1,
+        "file": "assets/eyes-011.webp",
+        "sha256": "3b76001bd4f0895e6f274c6f8f0120493111d692222a9968d83dd52a7848c9eb",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "anime",
+        "weight": 1,
+        "file": "assets/eyes-012.webp",
+        "sha256": "57871c6c8ef33983e0032febd4631e63b37b658d9c0c100732601754620126f0",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "ohio",
+        "weight": 1,
+        "file": "assets/eyes-013.webp",
+        "sha256": "24a42737ba46fd276c423c6d9707f01768d55d87672eb5433c56660e9e2ef939",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "nehi",
+        "weight": 1,
+        "file": "assets/eyes-014.webp",
+        "sha256": "81f3ed88c1d6c8df1b4209d724cf60df6f221a9dd35ab8641094ea121d1efe80",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "masal",
+        "weight": 1,
+        "file": "assets/eyes-015.webp",
+        "sha256": "f8f3663ca4c223c1553d7d408a99b0d58b2e8c0ba9e400f138f5b6182403f419",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "mechanic",
+        "weight": 1,
+        "file": "assets/eyes-016.webp",
+        "sha256": "bf8eaf959d6cf640169d639b9f4d47d05e147e98985e7e946d26d12e3d7e78ad",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "dontlookup",
+        "weight": 1,
+        "file": "assets/eyes-017.webp",
+        "sha256": "a27c16241a106e69124b1253c3f433eb4253768b6029f82523d229a530e2357a",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "calmguy",
+        "weight": 1,
+        "file": "assets/eyes-018.webp",
+        "sha256": "68d53208f080ebaedada2c2c46fa10b416dd5f383c016ea14cafe609d27ae97b",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "wassup",
+        "weight": 1,
+        "file": "assets/eyes-019.webp",
+        "sha256": "ad323b121a12684434dd9d80d499277a66eac5209325c07088c38379d599d8b0",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "why",
+        "weight": 1,
+        "file": "assets/eyes-020.webp",
+        "sha256": "cbee56b38bbb96417c97778433045cfe189c962077ba42b91d8dbd742935d5f9",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "cringe",
+        "weight": 1,
+        "file": "assets/eyes-021.webp",
+        "sha256": "6da6fdd13d9e8a78fba8a170337429918908149af6b1903e37942ff323c8a3ac",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "robin",
+        "weight": 1,
+        "file": "assets/eyes-022.webp",
+        "sha256": "290f839ed7f4d52b3894f3a7789fed0ff5e8c31ba37fe8c503a4027b85147bc6",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "unfinishedbionic",
+        "weight": 1,
+        "file": "assets/eyes-023.webp",
+        "sha256": "d2174c59a64df9d21c7ed2774414a8955fc131e6eaac30f7d08524439841826a",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "bionic eyes",
+        "weight": 1,
+        "file": "assets/eyes-024.webp",
+        "sha256": "01ad2dde517b83653f34c1fc71213ddd711ab93354122516da0ec179d95c1337",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "lock",
+        "weight": 1,
+        "file": "assets/eyes-025.webp",
+        "sha256": "5ece75ed4baaae736ce0eabdac964124ebc28429f397b7777c096b6495a5888e",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "blueeyes",
+        "weight": 1,
+        "file": "assets/eyes-026.webp",
+        "sha256": "29ba3ceb7e178b149508f8b6343241dd560330337e8ed1f2111bb76407fedac7",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "darko",
+        "weight": 1,
+        "file": "assets/eyes-027.webp",
+        "sha256": "a8872e1108c9248196e4bc5e739f8ad628e1692c305b51f2e92c2111b0e87448",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "steve",
+        "weight": 1,
+        "file": "assets/eyes-028.webp",
+        "sha256": "e2c88a6a89a6191ede4c61edf6253508421a5cf4bdba87031b5bb41957180e13",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "closeeyes",
+        "weight": 1,
+        "file": "assets/eyes-029.webp",
+        "sha256": "ae9b645fbc05276ddb90f532cedb5c7442ac8f61b45b63725584a571d2cb3f36",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "sunglasses red",
+        "weight": 1,
+        "file": "assets/eyes-030.webp",
+        "sha256": "ccc74476a33cd26a96fbe5576f6c0890269131b4f01439868fe26f04141c983c",
+        "size": [
+          900,
+          900
+        ]
+      },
+      {
+        "name": "visor blue",
+        "weight": 1,
+        "file": "assets/eyes-031.webp",
+        "sha256": "202cddc6fd044a9a21519cbd5f7c53c39f32df0741a5dcedaed445e7b4ce9a09",
+        "size": [
+          900,
+          900
+        ]
+      }
+    ]
+  },
+  "exclude": [],
+  "base": {
+    "file": "assets/base.webp",
+    "sha256": "0671f5b4fb25153de8de41336de10d69e32424978f5ef4ac6f28edf86c5a801d",
+    "size": [
+      900,
+      900
+    ]
+  }
+}

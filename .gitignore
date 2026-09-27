@@ -1,3 +1,12 @@
 .DS_Store
 .sites-runtime/
 node_modules/
+
+# Local NFT batch outputs; assets/config remain versioned.
+generated/
+__pycache__/
+
+.env
+.env.*
+!.env.example
+build/

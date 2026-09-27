@@ -48,3 +48,11 @@ npm test
 ## Safe next step
 
 Open `/test-mint/`, connect either designated public wallet, deploy the two-wallet V2 contract once, and record its address. Each wallet's first V2 mint is free plus testnet gas. Every deployment and mint requires the user to review and approve the Rabby transaction.
+
+## Offline collection generator
+
+`generator/README.md` documents the local batch compositor. The Trait Lab's 130 layers + base are extracted in `generator/assets/`, with source hash, trait names and checksums in `generator/collection.json`. Actual embedded dimensions are 900×900. Generate through `scripts/generate-collection.py`; no AI API calls. `generated/` is ignored by Git. The balanced 10,000-image collection exists locally at `generated/collection-10000/` and passed count, uniqueness, metadata, hash and category-balance validation. See `COLLECTION_STATUS.md`. Production metadata still needs final hosted image URIs.
+
+## Production candidate backend
+
+See `backend/README.md` before continuing. `contracts/Dehumain.sol` and the quote service are local candidates only. `npm run test:production` validates the new rules independently of the old testnet rehearsal. Live holding checks at each mint are a working assumption. Pons graduation has no migration transaction. Price adapter, actual token address, final collection, hosting, independent review and frontend transaction wiring remain outstanding. No production deployment or public mint enablement has happened.

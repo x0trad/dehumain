@@ -8,7 +8,10 @@
   },
   "scripts": {
     "build:test": "node scripts/build-test.cjs",
-    "test": "node tests/mint-wallet.cjs && node tests/test-contract.cjs"
+    "test": "node tests/mint-wallet.cjs && node tests/test-contract.cjs",
+    "build:production": "node scripts/build-production.cjs",
+    "test:production": "npm run build:production && node tests/production.cjs",
+    "start:mint-api": "node backend/server.cjs"
   },
   "repository": {
     "type": "git",
