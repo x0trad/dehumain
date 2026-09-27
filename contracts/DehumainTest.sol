@@ -5,18 +5,23 @@ import '@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol';
 contract DehumainTest is ERC721URIStorage {
     uint256 public constant MAX_SUPPLY = 3;
     uint256 public constant PAID_PRICE = 0.0001 ether;
-    address public immutable tester;
+    address public immutable treasury;
     uint256 public minted;
+    mapping(address => bool) public isTester;
     mapping(address => uint256) public mintCount;
     string[3] private metadata;
-    constructor(address tester_, string[3] memory uris) ERC721('Dehumain Test', 'DHTEST') {
+    constructor(address treasury_, address[2] memory testers_, string[3] memory uris) ERC721('Dehumain Test V2', 'DHTEST') {
         require(block.chainid == 46630 || block.chainid == 1337, 'Test network only');
-        require(tester_ != address(0), 'Invalid tester');
-        tester = tester_;
+        require(treasury_ != address(0), 'Invalid treasury');
+        require(testers_[0] != address(0) && testers_[1] != address(0), 'Invalid tester');
+        require(testers_[0] != testers_[1], 'Duplicate tester');
+        treasury = treasury_;
+        isTester[testers_[0]] = true;
+        isTester[testers_[1]] = true;
         metadata = uris;
     }
     function mint() external payable {
-        require(msg.sender == tester, 'Test wallet only');
+        require(isTester[msg.sender], 'Test wallet only');
         require(minted < MAX_SUPPLY, 'Sold out');
         require(msg.value == (mintCount[msg.sender] == 0 ? 0 : PAID_PRICE), 'Incorrect payment');
         uint256 id = ++minted;
@@ -24,10 +29,10 @@ contract DehumainTest is ERC721URIStorage {
         _safeMint(msg.sender, id);
         _setTokenURI(id, metadata[id - 1]);
     }
-    // Return test payments only to the designated tester; no mutable treasury address.
+    // Return simulated payments only to the fixed test treasury.
     function reclaimTestETH() external {
-        require(msg.sender == tester, 'Test wallet only');
-        (bool ok,) = payable(tester).call{value:address(this).balance}('');
+        require(msg.sender == treasury, 'Treasury only');
+        (bool ok,) = payable(treasury).call{value:address(this).balance}('');
         require(ok, 'Transfer failed');
     }
 }

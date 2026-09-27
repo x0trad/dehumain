@@ -1,12 +1,14 @@
 /* Testnet-only rehearsal. No private keys, approvals, price feeds or production contract. */
 const $=id=>document.getElementById(id);
-const TESTER='0x7dae73bfb82c7ad059d9c135532283c9b7e48e27';
+const TESTERS=['0x7dae73bfb82c7ad059d9c135532283c9b7e48e27','0x9c7d99d2774f2af996af0801751f02c29da675d6'];
+const TREASURY=TESTERS[0];
 const CHAIN='0xb626'; // 46630
 let wallet, signer, account, nft, artifact, collection, busy=false, correct=false;
 const say=text=>$('status').textContent=text;
-$('tester').textContent=TESTER;
+$('tester-a').textContent=TESTERS[0];
+$('tester-b').textContent=TESTERS[1];
 function controls(){
- const ready=!!artifact&&!!collection&&!!signer&&correct&&account?.toLowerCase()===TESTER;
+ const ready=!!artifact&&!!collection&&!!signer&&correct&&TESTERS.includes(account?.toLowerCase());
  for(const id of ['load','deploy'])$(id).disabled=busy||!ready;
  $('mint').disabled=busy||!ready||!nft;
  $('refund').disabled=busy||!ready||!nft;
@@ -21,14 +23,14 @@ async function sync(){
  const chain=await wallet.request({method:'eth_chainId'});correct=chain.toLowerCase()===CHAIN;
  $('switch').hidden=correct||!account;
  if(account&&correct)signer=await new ethers.BrowserProvider(wallet).getSigner(account);
- say(!account?'Wallet disconnected.':!correct?'Switch to Robinhood Chain testnet.':account.toLowerCase()!==TESTER?'This wallet is not the designated tester.':'Test wallet ready. Deploy once, or load an existing test contract.');controls();
+ say(!account?'Wallet disconnected.':!correct?'Switch to Robinhood Chain testnet.':!TESTERS.includes(account.toLowerCase())?'This wallet is not one of the designated testers.':'Test wallet ready. Deploy V2 once, or load its contract address.');controls();
 }
 async function checkWallet(){
  const accounts=await wallet.request({method:'eth_accounts'}), chain=await wallet.request({method:'eth_chainId'});
- if(chain.toLowerCase()!==CHAIN||accounts[0]?.toLowerCase()!==TESTER)throw Error('Select the designated wallet on Robinhood Chain testnet.');
+ if(chain.toLowerCase()!==CHAIN||!TESTERS.includes(accounts[0]?.toLowerCase()))throw Error('Select one of the designated wallets on Robinhood Chain testnet.');
 }
 async function stats(){
- const [minted,count]=await Promise.all([nft.minted(),nft.mintCount(TESTER)]);
+ const [minted,count]=await Promise.all([nft.minted(),nft.mintCount(account)]);
  $('supply').textContent=`${minted} / 3 minted. Your next mint: ${count===0n?'free + testnet gas':'0.0001 test ETH + testnet gas'}.`;
  $('mint').textContent=minted>=3n?'All three minted':count===0n?'Mint first NFT · free + test gas':'Mint next NFT · 0.0001 test ETH';
  if(minted>=3n){$('supply').textContent='All 3 test NFTs minted.';}
@@ -48,7 +50,8 @@ $('load').onclick=()=>run(async()=>{
  await checkWallet(); const target=$('contract').value.trim();if(!ethers.isAddress(target))throw Error('Enter a valid test contract address.');
  const code=await signer.provider.getCode(target);if(code==='0x')throw Error('No contract exists at this address. A wallet address cannot be used as the test contract address.');
  const candidate=new ethers.Contract(target,artifact.abi,signer);
- if((await candidate.tester()).toLowerCase()!==TESTER||await candidate.MAX_SUPPLY()!==3n||await candidate.PAID_PRICE()!==ethers.parseEther('0.0001')||await candidate.name()!=='Dehumain Test')throw Error('This contract does not match the test configuration.');
+ const valid=await Promise.all(TESTERS.map(testWallet=>candidate.isTester(testWallet)));
+ if((await candidate.treasury()).toLowerCase()!==TREASURY||valid.some(value=>!value)||await candidate.MAX_SUPPLY()!==3n||await candidate.PAID_PRICE()!==ethers.parseEther('0.0001')||await candidate.name()!=='Dehumain Test V2')throw Error('This contract does not match the two-wallet V2 configuration.');
  nft=candidate;await stats();say('Test collection loaded. Review the price before minting.');
 });
 $('deploy').onclick=()=>run(async()=>{
@@ -60,7 +63,7 @@ $('deploy').onclick=()=>run(async()=>{
    const metadata={...collection[i],image};uris.push('data:application/json;base64,'+btoa(unescape(encodeURIComponent(JSON.stringify(metadata)))));
  }
  await checkWallet();say('Review the test collection deployment in your wallet.');
- const deployed=await new ethers.ContractFactory(artifact.abi,artifact.bytecode,signer).deploy(TESTER,uris);
+ const deployed=await new ethers.ContractFactory(artifact.abi,artifact.bytecode,signer).deploy(TREASURY,TESTERS,uris);
  receipt(deployed.deploymentTransaction().hash);say('Deployment submitted. Waiting for testnet confirmation…');await deployed.waitForDeployment();
  $('contract').value=await deployed.getAddress();nft=deployed;await stats();say('Test contract deployed. Copy its address to reuse it. You can now mint your first NFT.');
 });

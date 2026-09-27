@@ -16,8 +16,8 @@ Read `README.md` before changing anything. The current production site is a stat
 
 - `/mint/` remains the public prelaunch page and must not send transactions.
 - `/test-mint/` is a separate Robinhood Chain testnet rehearsal for exactly three generated portraits.
-- Designated test wallet: `0x7DAe73bfB82C7aD059d9C135532283C9b7e48e27`.
-- First test mint is free except gas. The next two cost exactly `0.0001` test ETH each, plus gas.
+- Designated V2 test wallets: `0x7DAe73bfB82C7aD059d9C135532283C9b7e48e27` and `0x9c7d99d2774f2af996af0801751f02c29da675d6`.
+- Each designated wallet's first V2 mint is free except gas. A later mint by that wallet costs exactly `0.0001` test ETH, plus gas.
 - The fixed test price is a simulation. It is not a US$5 oracle implementation.
 - The allowlisted wallet simulates Dehumain-token eligibility. No token contract or agent activation exists.
 - The test contract rejects deployment on Robinhood Chain mainnet and permits only chain IDs 46630 and 1337.
@@ -25,6 +25,8 @@ Read `README.md` before changing anything. The current production site is a stat
 - Deployment transaction: `0x0dae7844f1c729d7b37e9709d825d3ecbae7543b0d91c6a33195ceefaceb30ca`.
 - Test NFT #1 was minted to the designated wallet in transaction `0x9821f92827e4bc112880d454414082ff4c250b48a683059dacfe5cfb1a4614f9`.
 - Current verified state after that mint: `minted = 1`, wallet mint count `= 1`, and token ID 1 is owned by the designated wallet.
+- That address is the archived V1 one-wallet contract. V2 requires a fresh deployment because deployed contracts cannot be edited.
+- V2 uses the first test wallet as its fixed treasury and allows both listed wallets to mint.
 
 ## Commands
 
@@ -45,4 +47,4 @@ npm test
 
 ## Safe next step
 
-Open `/test-mint/`, connect only the designated public wallet, load the prefilled deployed contract, and continue with test NFT #2 when ready. The remaining two mints cost `0.0001` test ETH each plus testnet gas. Every mint requires the user to review and approve the Rabby transaction.
+Open `/test-mint/`, connect either designated public wallet, deploy the two-wallet V2 contract once, and record its address. Each wallet's first V2 mint is free plus testnet gas. Every deployment and mint requires the user to review and approve the Rabby transaction.
