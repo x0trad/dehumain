@@ -7,6 +7,10 @@
     "test": "tests"
   },
   "scripts": {
+    "build": "npm --prefix site run build && rm -rf dist && cp -R site/dist dist",
+    "site:dev": "npm --prefix site run dev",
+    "site:lint": "npm --prefix site run lint",
+    "site:db:generate": "npm --prefix site run db:generate",
     "build:test": "node scripts/build-test.cjs",
     "test": "node tests/mint-wallet.cjs && node tests/test-contract.cjs",
     "build:production": "node scripts/build-production.cjs",

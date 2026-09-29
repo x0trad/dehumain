@@ -56,3 +56,7 @@ Open `/test-mint/`, connect either designated public wallet, deploy the two-wall
 ## Production candidate backend
 
 See `backend/README.md` before continuing. `contracts/Dehumain.sol` and the quote service are local candidates only. `npm run test:production` validates the new rules independently of the old testnet rehearsal. Live holding checks at each mint are a working assumption. The confirmed production token address is `0xFA78111742D290DCF3b5266b9f6dEb75033e4602`; public site copy must still call it only **Dehumain token** and must not reveal its ticker. Pons lists the token on its ETH bonding curve and it has not graduated. Pons graduation has no migration transaction. Canonical post-graduation pool verification, the price adapter, final collection storage, hosting, independent review and frontend transaction wiring remain outstanding. No production NFT deployment or public mint enablement has happened.
+
+## Waitlist site
+
+The hosted site now builds from the Vinext app in `site/` and uses the Site D1 binding `DB`. `/waitlist` stores normalized X handles, normalized EVM wallet addresses, unique card codes, timestamps and `pending_verification` status. The first migration is `site/drizzle/0000_marvelous_amazoness.sql`. The X links currently open `@DehumAinVerse`; replace them with the exact official campaign-post URL once published. Automatic X-action verification is not implemented and must not be implied without reviewed X OAuth/API integration.

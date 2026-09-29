@@ -1,0 +1,93 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "id": "b0b5826a-fe00-4054-91b3-cc8b6e6045dd",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "tables": {
+    "waitlist_entries": {
+      "name": "waitlist_entries",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": true
+        },
+        "x_handle": {
+          "name": "x_handle",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "wallet_address": {
+          "name": "wallet_address",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "card_code": {
+          "name": "card_code",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        },
+        "eligibility_status": {
+          "name": "eligibility_status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "'pending_verification'"
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false
+        }
+      },
+      "indexes": {
+        "waitlist_x_handle_unique": {
+          "name": "waitlist_x_handle_unique",
+          "columns": [
+            "x_handle"
+          ],
+          "isUnique": true
+        },
+        "waitlist_wallet_unique": {
+          "name": "waitlist_wallet_unique",
+          "columns": [
+            "wallet_address"
+          ],
+          "isUnique": true
+        },
+        "waitlist_card_code_unique": {
+          "name": "waitlist_card_code_unique",
+          "columns": [
+            "card_code"
+          ],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    }
+  },
+  "views": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "indexes": {}
+  }
+}

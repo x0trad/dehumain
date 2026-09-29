@@ -15,6 +15,10 @@ The production Dehumain token is live on Robinhood Chain at [`0xFA78111742D290DC
 The mint page supports browser-wallet connection and network switching only. A production NFT contract and quote service have been prepared locally with token-holding, free-first-mint and paid-mint rules, but they are not deployed, hosted or connected to the public mint page. Minting must remain disabled until Pons graduation is independently verified by the production adapter. Agent activation is not implemented. Never store private keys in the site or metadata.
 Run wallet checks with `node tests/mint-wallet.cjs`.
 
+## Waitlist
+
+The `/waitlist` route collects one X username and one EVM wallet per applicant in the Site database. Entries begin as `pending_verification`; the form does not claim that clicking an X link proves a follow, like, repost or reply. Successful applicants receive a personalized card code and can download a 1200 × 628 PNG to reply beneath the official campaign post. Replace the current profile link with the exact campaign-post URL when it is published. Never export or publish wallet-to-X mappings without an explicit operational need.
+
 ## Test mint rehearsal
 
 A separate `/test-mint/` page and `contracts/DehumainTest.sol` have been prepared.

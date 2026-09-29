@@ -4,6 +4,7 @@ node_modules/
 
 # Local NFT batch outputs; assets/config remain versioned.
 generated/
+promo/
 __pycache__/
 
 .env
