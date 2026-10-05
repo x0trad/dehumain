@@ -1,0 +1,1 @@
+import{r as e}from"./domain-locale-D6XqCO20.js";e(),e();

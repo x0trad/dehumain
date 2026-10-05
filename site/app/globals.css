@@ -65,12 +65,27 @@ button,input { font:inherit; }
 
 .campaign-page { min-height:100svh; background:radial-gradient(circle at 78% 12%,rgba(180,143,77,.13),transparent 32rem),#10110f; }
 .campaign-main { width:min(100% - 2.5rem,72rem); margin:auto; }
-.campaign-hero { padding:clamp(4rem,10vw,9rem) 0 clamp(4rem,9vw,8rem); }
+.campaign-hero { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(17rem,.75fr); gap:clamp(2rem,4vw,4rem); align-items:center; padding:clamp(4rem,10vw,9rem) 0 clamp(4rem,9vw,8rem); }
+.campaign-hero-copy { min-width:0; }
 .campaign-status { display:inline-flex; align-items:center; gap:.65rem; margin:0 0 1.75rem; padding:.5rem .85rem; border:1px solid #595039; border-radius:999px; color:#e1d3ad; font:.75rem/1.2 ui-monospace,monospace; letter-spacing:.04em; }
 .campaign-status span { width:.45rem; height:.45rem; border-radius:50%; background:#c9a96a; box-shadow:0 0 12px rgba(201,169,106,.8); }
 .campaign-hero h1 { max-width:12ch; margin:0; font:400 clamp(3.5rem,8vw,7.5rem)/.9 "Apple Garamond",Garamond,Georgia,serif; letter-spacing:-.035em; }
 .campaign-hero h1 em { color:#d5c394; font-weight:400; }
-.campaign-hero > p:last-child { max-width:39rem; margin:2rem 0 0; color:#bab7ad; font-size:clamp(1.05rem,2vw,1.3rem); line-height:1.7; }
+.campaign-hero-copy > p:last-child { max-width:39rem; margin:2rem 0 0; color:#bab7ad; font-size:clamp(1.05rem,2vw,1.3rem); line-height:1.7; }
+.campaign-ticket-wrap { display:grid; justify-items:center; min-width:0; }
+.campaign-ticket-control { width:min(100%,21rem); aspect-ratio:2/3; perspective:1100px; touch-action:none; cursor:grab; outline:none; -webkit-user-select:none; user-select:none; }
+.campaign-ticket-control[data-dragging="true"] { cursor:grabbing; }
+.campaign-ticket-control:focus-visible { outline:2px solid #e3cc91; outline-offset:10px; border-radius:12px; }
+.campaign-ticket { position:relative; width:100%; height:100%; transform-style:preserve-3d; }
+.campaign-ticket-front,.campaign-ticket-back { position:absolute; inset:0; backface-visibility:hidden; -webkit-backface-visibility:hidden; }
+.campaign-ticket-front { transform:translateZ(4px); }
+.campaign-ticket-front img { display:block; width:100%; height:100%; object-fit:contain; pointer-events:none; filter:drop-shadow(0 1.5rem 2rem rgba(0,0,0,.45)); }
+.campaign-ticket-back { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1rem; padding:2rem; color:#e4d1a2; text-align:center; background:radial-gradient(circle at 48% 45%,#393224,#161714 72%); border:1px solid #b59c67; transform:rotateY(180deg) translateZ(4px); -webkit-mask-image:url('/assets/dehumain-membership-ticket.png'); mask-image:url('/assets/dehumain-membership-ticket.png'); -webkit-mask-size:100% 100%; mask-size:100% 100%; }
+.campaign-ticket-back-mark { font-size:3.5rem; line-height:1; }
+.campaign-ticket-back-wordmark { font:400 clamp(2rem,3vw,3.2rem)/1 "Apple Garamond",Garamond,Georgia,serif; }
+.campaign-ticket-back-rule { width:65%; height:1px; background:#a48b58; }
+.campaign-ticket-back-label { font:.65rem/1.4 ui-monospace,monospace; letter-spacing:.2em; }
+.campaign-ticket-hint { margin:1rem 0 0; color:#a79c83; font:.72rem/1.4 ui-monospace,monospace; letter-spacing:.08em; text-align:center; text-transform:uppercase; }
 .campaign-distinction,.campaign-route,.campaign-integrity { padding:clamp(4rem,8vw,7rem) 0; border-top:1px solid #39382f; }
 .campaign-section-heading { max-width:42rem; margin:0 0 2.5rem; }
 .campaign-section-heading h2,.campaign-integrity h2 { margin:0 0 1rem; font:400 clamp(2.5rem,5vw,4.5rem)/1 "Apple Garamond",Garamond,Georgia,serif; letter-spacing:-.03em; }
@@ -92,5 +107,5 @@ button,input { font:inherit; }
 .campaign-integrity > p:not(.wl-kicker) { color:#b6b5ac; line-height:1.8; }
 .campaign-rules-note { margin-top:2.5rem; padding:1.5rem; border:1px solid #63553b; border-radius:16px; color:#b6b5ac; line-height:1.7; background:#1b1b16; }
 .campaign-rules-note strong { color:#e8d7aa; font-weight:500; }
-@media(max-width:760px){.campaign-hero{padding-top:4rem}.campaign-distinction-grid{grid-template-columns:1fr}.campaign-distinction-grid article{min-height:0}.campaign-route ol{grid-template-columns:repeat(2,minmax(0,1fr))}.campaign-route h3{margin-top:1.5rem}}
+@media(max-width:760px){.campaign-hero{grid-template-columns:1fr;padding-top:4rem}.campaign-ticket-control{width:min(65vw,16rem)}.campaign-distinction-grid{grid-template-columns:1fr}.campaign-distinction-grid article{min-height:0}.campaign-route ol{grid-template-columns:repeat(2,minmax(0,1fr))}.campaign-route h3{margin-top:1.5rem}}
 @media(max-width:480px){.campaign-route ol{grid-template-columns:1fr}}

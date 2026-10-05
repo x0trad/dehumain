@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { CampaignTicket } from "./ticket";
 
 export const metadata: Metadata = {
   title: "Promotional campaigns · Dehumain",
@@ -16,10 +17,13 @@ export default function CampaignPage() {
 
       <main className="campaign-main">
         <header className="campaign-hero">
-          <p className="wl-kicker">Promotional campaigns / A separate path</p>
-          <span className="campaign-status"><span aria-hidden="true" /> No campaign is open for entries</span>
-          <h1>Campaigns evolve.<br /><em>Fairness remains.</em></h1>
-          <p>Dehumain campaigns will be separate from the NFT Membership Pass. Each campaign will publish its own rules, eligibility, dates, entry method and prize details before participation opens.</p>
+          <div className="campaign-hero-copy">
+            <p className="wl-kicker">Promotional campaigns / A separate path</p>
+            <span className="campaign-status"><span aria-hidden="true" /> No campaign is open for entries</span>
+            <h1>Campaigns evolve.<br /><em>Fairness remains.</em></h1>
+            <p>Dehumain campaigns will be separate from the NFT Membership Pass. Each campaign will publish its own rules, eligibility, dates, entry method and prize details before participation opens.</p>
+          </div>
+          <CampaignTicket />
         </header>
 
         <section className="campaign-distinction" aria-labelledby="campaign-distinction-title">

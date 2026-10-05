@@ -9,8 +9,8 @@
       "_record-uXSNv6cl.js"
     ]
   },
-  "_app-rsc-cache-busting-j_HD-gr5.js": {
-    "file": "_next/static/chunks/app-rsc-cache-busting-j_HD-gr5.js",
+  "_app-rsc-cache-busting-dWSCpPMY.js": {
+    "file": "_next/static/chunks/app-rsc-cache-busting-dWSCpPMY.js",
     "name": "app-rsc-cache-busting",
     "imports": [
       "_rolldown-runtime-C60lm6uB.js",
@@ -62,8 +62,8 @@
     "file": "_next/static/chunks/protocol-headers-B9-bVeat.js",
     "name": "protocol-headers"
   },
-  "_query-DtBGhX2J.js": {
-    "file": "_next/static/chunks/query-DtBGhX2J.js",
+  "_query-B_ym6Bnd.js": {
+    "file": "_next/static/chunks/query-B_ym6Bnd.js",
     "name": "query"
   },
   "_record-uXSNv6cl.js": {
@@ -74,8 +74,19 @@
     "file": "_next/static/chunks/rolldown-runtime-C60lm6uB.js",
     "name": "rolldown-runtime"
   },
+  "app/campaign/ticket.tsx": {
+    "file": "_next/static/chunks/ticket-C0UowSN2.js",
+    "name": "ticket",
+    "src": "app/campaign/ticket.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-C60lm6uB.js",
+      "_framework-D_rUT4EX.js",
+      "_deployment-id-DFhHa9wO.js"
+    ]
+  },
   "app/waitlist/waitlist-form.tsx": {
-    "file": "_next/static/chunks/waitlist-form-MwYOkRm-.js",
+    "file": "_next/static/chunks/waitlist-form-XQmNsN_0.js",
     "name": "waitlist-form",
     "src": "app/waitlist/waitlist-form.tsx",
     "isDynamicEntry": true,
@@ -85,7 +96,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js": {
-    "file": "_next/static/chunks/app-route-prefetch-policy-CCEfUfuo.js",
+    "file": "_next/static/chunks/app-route-prefetch-policy-D12ATncU.js",
     "name": "app-route-prefetch-policy",
     "src": "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
     "isDynamicEntry": true,
@@ -94,18 +105,18 @@
     ]
   },
   "node_modules/vinext/dist/shims/internal/hybrid-client-route-owner.js": {
-    "file": "_next/static/chunks/hybrid-client-route-owner-ChoqtJ8_.js",
+    "file": "_next/static/chunks/hybrid-client-route-owner-DPnpDJUL.js",
     "name": "hybrid-client-route-owner",
     "src": "node_modules/vinext/dist/shims/internal/hybrid-client-route-owner.js",
     "isDynamicEntry": true,
     "imports": [
       "virtual:vinext-app-browser-entry",
       "_protocol-headers-B9-bVeat.js",
-      "_query-DtBGhX2J.js"
+      "_query-B_ym6Bnd.js"
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "_next/static/chunks/layout-segment-context-B6s6n7GQ.js",
+    "file": "_next/static/chunks/layout-segment-context-B3WVS6Ye.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -117,7 +128,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/link.js": {
-    "file": "_next/static/chunks/link-Bg8Jzh_a.js",
+    "file": "_next/static/chunks/link-BIi3w6xz.js",
     "name": "link",
     "src": "node_modules/vinext/dist/shims/link.js",
     "isDynamicEntry": true,
@@ -128,20 +139,20 @@
       "node_modules/vinext/dist/shims/internal/app-route-prefetch-policy.js",
       "_deployment-id-DFhHa9wO.js",
       "_protocol-headers-B9-bVeat.js",
-      "_query-DtBGhX2J.js",
+      "_query-B_ym6Bnd.js",
       "_record-uXSNv6cl.js"
     ],
     "dynamicImports": [
       "node_modules/vinext/dist/shims/internal/hybrid-client-route-owner.js",
       "virtual:vinext-app-browser-entry",
       "_app-elements-H_Dr48wG.js",
-      "_app-rsc-cache-busting-j_HD-gr5.js",
+      "_app-rsc-cache-busting-dWSCpPMY.js",
       "_app-rsc-render-mode-CvTCGruk.js",
       "_headers-C_MtfdF4.js"
     ]
   },
   "node_modules/vinext/dist/shims/streamed-icons.js": {
-    "file": "_next/static/chunks/streamed-icons-20nPfslU.js",
+    "file": "_next/static/chunks/streamed-icons-Krg5Wk5X.js",
     "name": "streamed-icons",
     "src": "node_modules/vinext/dist/shims/streamed-icons.js",
     "isDynamicEntry": true,
@@ -151,7 +162,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "_next/static/chunks/index-Zurb1hQO.js",
+    "file": "_next/static/chunks/index-DvvAhbHv.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
@@ -159,7 +170,7 @@
       "_rolldown-runtime-C60lm6uB.js",
       "_framework-D_rUT4EX.js",
       "_app-elements-H_Dr48wG.js",
-      "_app-rsc-cache-busting-j_HD-gr5.js",
+      "_app-rsc-cache-busting-dWSCpPMY.js",
       "_headers-C_MtfdF4.js",
       "_navigation-errors-D5LMQqDL.js",
       "_hash-Cp347hhd.js",
@@ -171,6 +182,7 @@
       "virtual:vinext-app-browser-entry",
       "node_modules/vinext/dist/shims/layout-segment-context.js",
       "node_modules/vinext/dist/shims/streamed-icons.js",
+      "app/campaign/ticket.tsx",
       "node_modules/vinext/dist/shims/link.js",
       "app/waitlist/waitlist-form.tsx"
     ]
