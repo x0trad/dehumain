@@ -1,6 +1,6 @@
 # Dehumain handoff
 
-Read `README.md` before changing anything. The current production site is a static site in `dist/`, hosted with the Sites configuration in `.openai/hosting.json`.
+Read `README.md` before changing anything. The current production site builds from the Vinext app in `site/` into `dist/`, hosted with the Sites configuration in `.openai/hosting.json`.
 
 ## Current public narrative
 
@@ -9,6 +9,8 @@ Read `README.md` before changing anything. The current production site is a stat
 - After migration, a wallet holding at least US$5 worth of Dehumain token qualifies for one free NFT mint while supply lasts.
 - Additional production mints are planned to cost US$5 worth of ETH, plus gas.
 - NFT owners may later pay separately to activate an AI-agent type.
+- The NFT is a Membership Pass. Potential ecosystem benefits must be described as future possibilities until released. It is not a giveaway ticket.
+- Promotional campaigns are separate from membership and must offer their own published rules and free participation route. NFT ownership must not automatically create campaign entries or improve odds. The membership multiplier is disabled by default and must not appear in public copy while disabled.
 - Agent types are planned at token market caps of US$100k, US$300k, US$500k, then every additional US$200k.
 - The project is planned for Robinhood Chain. Do not restore the older Arc narrative or the obsolete “one token per NFT” narrative.
 
@@ -59,4 +61,4 @@ See `backend/README.md` before continuing. `contracts/Dehumain.sol` and the quot
 
 ## Waitlist site
 
-The hosted site now builds from the Vinext app in `site/` and uses the Site D1 binding `DB`. `/waitlist` stores normalized X handles, normalized EVM wallet addresses, unique card codes, timestamps and `pending_verification` status. The first migration is `site/drizzle/0000_marvelous_amazoness.sql`. The X links currently open `@DehumAinVerse`; replace them with the exact official campaign-post URL once published. Automatic X-action verification is not implemented and must not be implied without reviewed X OAuth/API integration.
+The hosted site builds from the Vinext app in `site/` and uses the Site D1 binding `DB`. `/waitlist` stores normalized X handles, normalized EVM wallet addresses, unique card codes, timestamps and `pending_verification` status. The first migration is `site/drizzle/0000_marvelous_amazoness.sql`. The X links intentionally open `@DehumAinVerse`; the team verifies social actions manually and does not require a hard-coded post URL. The waitlist card says `REGISTERED`, not `APPROVED`, because entry is pending manual review. This mint waitlist never creates a promotional campaign entry. `/campaign` is an informational preview only; no campaign, prize, terms acceptance, points or entries are live. See `CAMPAIGN_ARCHITECTURE.md` before implementing the separate campaign system.

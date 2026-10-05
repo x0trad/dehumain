@@ -4,7 +4,7 @@ import "./brand.css";
 
 export const metadata: Metadata = {
   title: "dehumain",
-  description: "A digital population envisioned for Robinhood Chain.",
+  description: "Dehumain NFT membership, AI identities and separate promotional campaigns on Robinhood Chain.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

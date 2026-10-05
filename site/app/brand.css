@@ -133,6 +133,18 @@ h1 {
 .footer-wordmark { color: #f2eee5; text-decoration: none; font-family: "Apple Garamond", Garamond, Georgia, serif; font-size: 2.5rem; line-height: 1; letter-spacing: -0.035em; }
 .footer-wordmark:focus-visible { outline: 2px solid #f2eee5; outline-offset: 6px; }
 .footer p, .footer-copyright { margin: 0; color: #a6a599; font-size: 0.875rem; line-height: 1.5; }
+.footer-link { color: #d9c591; font-size: .875rem; text-underline-offset: .3rem; }
+
+.paths { max-width: 70rem; margin: auto; padding: clamp(4rem,8vw,7rem) 1.5rem; border-top: 1px solid #302f29; }
+.paths-heading { max-width: 43rem; margin: 0 auto 3rem; text-align: center; }
+.paths-heading h2 { margin: 0 0 1rem; font: 400 clamp(2.8rem,5vw,4.5rem)/1.02 "Apple Garamond",Garamond,Georgia,serif; letter-spacing: -.025em; }
+.paths-heading > p:last-child { color:#b6b5ac; line-height:1.7; }
+.paths-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.25rem; }
+.path-card { display:flex; flex-direction:column; min-height:21rem; padding:clamp(1.5rem,3vw,2.5rem); border:1px solid #4b4638; border-radius:20px; background:radial-gradient(circle at 90% 0%,rgba(196,163,91,.1),transparent 45%),#171813; }
+.path-number { color:#d0b97e; font: .75rem/1 ui-monospace,monospace; letter-spacing:.13em; }
+.path-card h3 { margin:2.5rem 0 .8rem; font:400 clamp(2rem,3.5vw,3rem)/1 "Apple Garamond",Garamond,Georgia,serif; }
+.path-card p { margin:0 0 2rem; color:#b6b5ac; line-height:1.75; }
+.path-card a { margin-top:auto; color:#e4d5b1; text-underline-offset:.35rem; }
 
 @media (max-width: 600px) {
   .identity { padding-top: max(4rem, 9svh); }
@@ -142,6 +154,9 @@ h1 {
   .lineage { padding-inline: 1.25rem; }
   .family-member figcaption { padding-top: 0.75rem; }
   .footer { flex-direction: column; align-items: center; text-align: center; padding: 2rem 0; gap: 1rem; }
+  .paths-grid { grid-template-columns:1fr; }
+  .path-card { min-height:0; }
+  .path-card h3 { margin-top:1.5rem; }
 }
 
 @media (max-height: 500px) and (min-width: 601px) {

@@ -3,9 +3,9 @@ Dehumain — an AI-generated portrait collection planned for Robinhood Chain.
 
 ## Current product direction
 
-One shared token: Dehumain token on Robinhood Chain. No separate token per NFT.
+One shared token: Dehumain token on Robinhood Chain. No separate token per NFT. The NFT is a Membership Pass for the Dehumain ecosystem. Potential benefits will be announced as they become available.
 After migration, wallets meeting the US$5 holding eligibility rules receive one free mint while supply lasts. Additional mints cost US$5 in ETH, and collectors pay gas on all mints.
-NFT holders may optionally pay an activation fee to pair any NFT with an available agent type. New types are planned at Dehumain token market caps of $100k, $300k, $500k, then every additional $200k.
+NFT holders may optionally pay an activation fee to pair any NFT with an available agent type. New types are planned at Dehumain token market caps of $100k, $300k, $500k, then every additional $200k. Promotional campaigns are separate from NFT membership and must have their own published rules and free participation route.
 Activation fees, usage allowances, migration details, valuation source, snapshot timing and wallet limits remain undecided.
 
 ## Implementation status
@@ -17,7 +17,11 @@ Run wallet checks with `node tests/mint-wallet.cjs`.
 
 ## Waitlist
 
-The `/waitlist` route collects one X username and one EVM wallet per applicant in the Site database. Entries begin as `pending_verification`; the form does not claim that clicking an X link proves a follow, like, repost or reply. Successful applicants receive a personalized card code and can download a 1200 × 628 PNG to reply beneath the official campaign post. Replace the current profile link with the exact campaign-post URL when it is published. Never export or publish wallet-to-X mappings without an explicit operational need.
+The `/waitlist` route collects one X username and one EVM wallet per applicant in the Site database. Entries begin as `pending_verification`; the form does not claim that clicking an X link proves a follow, like, repost or reply. Applicants receive a personalized `REGISTERED` origin card and can download a 1200 × 628 PNG to reply beneath the official waitlist post. The team checks X actions manually. The origin register is for the NFT mint and does not create an entry in any promotional campaign. Never export or publish wallet-to-X mappings without an explicit operational need.
+
+## Promotional campaigns
+
+`/campaign` explains the planned separate campaign path and is explicitly marked as not open for entries. It announces no prize, entry boost, or NFT multiplier. Campaign administration, rules acceptance, versioned terms, free-entry processing and prize configuration are not implemented yet. See `CAMPAIGN_ARCHITECTURE.md` for the approved direction and required controls before a campaign can launch.
 
 ## Test mint rehearsal
 

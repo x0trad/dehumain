@@ -49,16 +49,16 @@ export default function WaitlistForm() {
     context.rotate(-Math.PI / 15);
     context.strokeStyle="#ddc990"; context.lineWidth=5; context.beginPath(); context.arc(0,0,125,0,Math.PI*2); context.stroke();
     context.lineWidth=1.5; context.beginPath(); context.arc(0,0,111,0,Math.PI*2); context.stroke();
-    context.fillStyle="#e6d5a9"; context.textAlign="center"; context.font="700 30px ui-monospace, monospace"; context.fillText("APPROVED",0,3);
-    context.font="16px ui-monospace, monospace"; context.fillText("CARD ISSUED",0,38);
+    context.fillStyle="#e6d5a9"; context.textAlign="center"; context.font="700 27px ui-monospace, monospace"; context.fillText("REGISTERED",0,3);
+    context.font="16px ui-monospace, monospace"; context.fillText("ORIGIN CARD",0,38);
     context.restore();
     const link=document.createElement("a"); link.download=`dehumain-${result.cardCode.toLowerCase()}.png`; link.href=canvas.toDataURL("image/png"); link.click();
   }
 
   if (result) return (
     <section className="wl-panel wl-success" aria-labelledby="waitlist-card-title">
-      <div className="wl-card"><span className="wl-card-top">Dehumain · Origin register</span><h3 id="waitlist-card-title">founding identity</h3><p>{result.xHandle}</p><span className="wl-card-stamp" aria-label="Card issued and approved"><strong>APPROVED</strong><small>CARD ISSUED</small></span><span className="wl-card-code">{result.cardCode}</span></div>
-      <p className="wl-panel-copy">Your origin card is approved for issue. Your entry is recorded and pending review of the X steps. Download the card, then attach it as one reply to the official post.</p>
+      <div className="wl-card"><span className="wl-card-top">Dehumain · Origin register</span><h3 id="waitlist-card-title">founding identity</h3><p>{result.xHandle}</p><span className="wl-card-stamp" aria-label="Origin card registered"><strong>REGISTERED</strong><small>ORIGIN CARD</small></span><span className="wl-card-code">{result.cardCode}</span></div>
+      <p className="wl-panel-copy">Your mint waitlist registration is recorded. The X steps are pending manual review. Download the card, then attach it as one reply to the official post. This card is not a promotional campaign entry.</p>
       <div className="wl-success-actions"><button type="button" onClick={downloadCard}>Download card</button><a href="https://x.com/DehumAinVerse" target="_blank" rel="noreferrer">Open X to reply</a></div>
     </section>
   );
@@ -72,7 +72,7 @@ export default function WaitlistForm() {
         <label className="wl-check"><input name="completed" type="checkbox" required /><span>I followed @DehumAinVerse and liked and reposted the official waitlist post.</span></label>
         <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" style={{position:"absolute",left:"-9999px"}} />
         <button className="wl-submit" type="submit" disabled={loading}>{loading ? "Recording identity…" : "Record my origin"}</button>
-        <p className="wl-status" data-kind={error ? "error" : "info"} aria-live="polite">{error || "Your card is issued after submission. Mint eligibility depends on the published mint rules and review of the X steps."}</p>
+        <p className="wl-status" data-kind={error ? "error" : "info"} aria-live="polite">{error || "This is the NFT mint waitlist, separate from any promotional campaign. Mint eligibility depends on the published mint rules and manual review of the X steps."}</p>
         <p className="wl-rules">No purchase is required to join. One entry per person, X account and wallet. Multiple-account entries and repeated replies are ineligible. Never submit a seed phrase or private key.</p>
       </form>
     </section>

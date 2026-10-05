@@ -11,7 +11,8 @@ export default function WaitlistPage() {
       <main className="wl-main">
         <p className="wl-kicker">The origin register · Before the first mint</p>
         <h1 className="wl-title">Every identity begins somewhere.</h1>
-        <p className="wl-intro">Before the first Dehumain faces are minted, we are recording the people who found the signal. Add your X account and wallet to the origin register. Your card marks your place in the story; your social steps are reviewed before eligibility is confirmed.</p>
+        <p className="wl-intro">Before the first Dehumain Membership Passes are minted, we are recording the people who found the signal. Add your X account and wallet to the origin register. Your card marks your interest in the NFT mint; your social steps are reviewed manually before waitlist eligibility is confirmed.</p>
+        <p className="wl-separation">The origin register is for the NFT mint. <Link href="/campaign">Promotional campaigns</Link> have separate rules and entries.</p>
         <div className="wl-layout">
           <ol className="wl-steps" aria-label="Waitlist steps">
             <li className="wl-step"><div><h2>Find the signal</h2><p>Follow the official Dehumain account on X.</p><a className="wl-action" href="https://x.com/intent/follow?screen_name=DehumAinVerse" target="_blank" rel="noreferrer">Follow @DehumAinVerse</a></div></li>
